@@ -19,22 +19,6 @@ export default function Home() {
               Program Zero Based KAIGO (Perawat Lansia) - 100% Gratis Pelatihan, Asrama, Visa & Tiket Pesawat
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
-                target="_blank"
-                className="px-8 py-4 bg-yellow-400 text-blue-900 font-bold rounded-lg hover:bg-yellow-300 transition text-lg text-center"
-              >
-                📋 Daftar Sekarang →
-              </a>
-              <a
-                href="#requirements"
-                className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-800 transition text-lg text-center"
-              >
-                ✓ Lihat Syarat
-              </a>
-            </div>
-
             <div className="grid grid-cols-3 gap-6 mt-16">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">7 SEP</div>
@@ -279,6 +263,38 @@ export default function Home() {
               <li>• <span className="font-bold">Buta Warna:</span> Perawatan lansia perlu perhatian detail, tidak diperbolehkan</li>
               <li>• <span className="font-bold">Izin Orang Tua:</span> Wajib tertulis - Anda akan bekerja jauh di Jepang</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16">Pertanyaan yang Sering Diajukan</h2>
+          <div className="max-w-4xl mx-auto space-y-6">
+            {[
+              {
+                q: 'Apakah ada biaya yang dikeluarkan lagi selain diatas?',
+                a: 'TIDAK ADA. Biaya tersebut dibayarkan langsung ke lembaga bersangkutan. BUKAN DIBAYARKAN KE OUR BLOOMING ACADEMY.'
+              },
+              {
+                q: 'Apakah ada dana talang?',
+                a: 'TIDAK ADA. Program kami menekankan biaya pelatihan dan pendidikan GRATIS.'
+              },
+              {
+                q: 'Setelah sampai di Jepang apakah dibantu?',
+                a: 'PASTI, dibantu sampai 5 tahun oleh Onodera User Run Co., Ltd Jepang. Dari jemput di bandara, mengurus tempat tinggal, dan support apabila terjadi masalah pekerjaan. Jangan khawatir, akan di-support oleh Staff Indonesia.'
+              },
+              {
+                q: 'Apakah ada Asrama laki-laki?',
+                a: 'Tidak ada. Asrama hanya untuk perempuan domisili luar Medan.'
+              }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-white p-6 rounded-lg border-l-4 border-blue-600 shadow">
+                <h3 className="font-bold text-lg text-gray-800 mb-3">Q: {faq.q}</h3>
+                <p className="text-gray-700 pl-4 border-l-4 border-blue-100">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
