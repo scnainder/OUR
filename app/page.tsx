@@ -84,6 +84,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Mengapa Kaigo Diminati Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Mengapa Kaigo Diminati?</h2>
+          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            Kaigo (Perawatan Lansia) adalah bidang pekerjaan yang paling diminati oleh orang Indonesia karena peluang finansial dan karir yang luar biasa
+          </p>
+
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: '💰',
+                title: 'Gaji Setara Orang Jepang',
+                desc: 'Menerima upah yang sama dengan pekerja Jepang, bukan diskriminasi gaji. Kesempatan finansial yang adil untuk semua.'
+              },
+              {
+                icon: '🎁',
+                title: 'Bonus Berlimpah',
+                desc: 'Bonus tahunan 1-4 kali gaji pokok. Benefit yang jauh lebih besar dibanding bidang kerja lainnya di Jepang.'
+              },
+              {
+                icon: '📈',
+                title: 'Karir Jangka Panjang',
+                desc: 'Dengan sertifikasi profesional, status Anda setara orang Jepang. Peluang bekerja dan tinggal di Jepang hingga lama.'
+              }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-lg shadow-lg border-t-4 border-blue-700 hover:shadow-xl transition">
+                <div className="text-5xl mb-4 text-center">{item.icon}</div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{item.title}</h3>
+                <p className="text-gray-700 text-center leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-20 bg-green-50">
         <div className="container mx-auto px-4">
@@ -277,6 +313,43 @@ export default function Home() {
               <li>• <span className="font-bold">Buta Warna:</span> Perawatan lansia perlu perhatian detail, tidak diperbolehkan</li>
               <li>• <span className="font-bold">Izin Orang Tua:</span> Wajib tertulis - Anda akan bekerja jauh di Jepang</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Tempat Kerja Kaigo Section */}
+      <section className="py-20 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Tempat Kerja Kaigo</h2>
+          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            Perawat lansia tidak hanya bekerja di panti jompo. Onodera User Run menawarkan berbagai pilihan tempat kerja di Jepang.
+          </p>
+
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            {[
+              {
+                icon: '🏢',
+                title: 'Panti Jompo (Care Facility)',
+                desc: 'Fasilitas perawatan lansia khusus dengan berbagai tingkat layanan. Lingkungan kerja yang terstruktur dengan pasien dalam jumlah tertentu.'
+              },
+              {
+                icon: '🏥',
+                title: 'Rumah Sakit',
+                desc: 'Departemen perawatan lansia di rumah sakit modern. Kesempatan bekerja dengan tim medis profesional dan peralatan canggih.'
+              }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-700">
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">{item.title}</h3>
+                <p className="text-gray-700 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-2xl mx-auto mt-12 bg-white p-6 rounded-lg border-l-4 border-blue-700 shadow">
+            <p className="text-gray-800 text-center">
+              <span className="font-bold text-blue-700">💡 Tip:</span> Anda dapat memilih jenis tempat kerja sesuai preferensi Anda saat proses pencocokan dengan employer Jepang di Onodera User Run.
+            </p>
           </div>
         </div>
       </section>
