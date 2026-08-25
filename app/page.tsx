@@ -1,6 +1,20 @@
+'use client'
+
 import Link from 'next/link'
 
+declare global {
+  interface Window {
+    fbq: (...args: any[]) => void
+  }
+}
+
 export default function Home() {
+  const handleCTAClick = () => {
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'AddToCart')
+    }
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -311,7 +325,8 @@ export default function Home() {
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
             target="_blank"
-            className="inline-block px-12 py-5 bg-yellow-400 text-blue-900 font-bold rounded-lg hover:bg-yellow-300 transition text-xl"
+            onClick={handleCTAClick}
+            className="inline-block px-12 py-5 bg-yellow-400 text-blue-900 font-bold rounded-lg hover:bg-yellow-300 transition text-xl cursor-pointer"
           >
             ✨ DAFTAR SEKARANG ✨
           </a>
