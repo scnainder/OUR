@@ -1,7 +1,0 @@
-name = "our"
-type = "javascript"
-account_id = ""
-workers_dev = true
-
-[env.production]
-name = "our"
