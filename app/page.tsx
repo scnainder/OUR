@@ -275,7 +275,7 @@ export default function Home() {
             <p className="font-bold text-yellow-600 mb-3">⚠️ Perhatian Khusus:</p>
             <ul className="text-sm text-gray-800 space-y-2">
               <li>• <span className="font-bold">Status Pendidikan:</span> Tidak boleh aktif mengikuti apapun (termasuk cuti akademik)</li>
-              <li>• <span className="font-bold">Tato:</span> Ditegaskan "tidak memiliki tato" tanpa terkecuali (budaya Jepang ketat)</li>
+              <li>• <span className="font-bold">Tato:</span> Ditegaskan &quot;tidak memiliki tato&quot; tanpa terkecuali (budaya Jepang ketat)</li>
               <li>• <span className="font-bold">Buta Warna:</span> Perawatan lansia perlu perhatian detail, tidak diperbolehkan</li>
               <li>• <span className="font-bold">Izin Orang Tua:</span> Wajib tertulis - Anda akan bekerja jauh di Jepang</li>
             </ul>
