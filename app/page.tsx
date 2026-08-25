@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <div className="inline-block mb-6 px-4 py-2 bg-blue-400 rounded-full text-sm font-semibold">
-              🎓 BATCH 55 - Pendaftaran Dibuka
+              🎓 BATCH 5 - Pendaftaran Dibuka
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -283,87 +283,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Proses Pendaftaran */}
-      <section className="py-20 bg-purple-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Proses Pendaftaran (6 Langkah)</h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              { num: '1️⃣', title: 'Klik Link Pendaftaran', desc: 'bit.ly/PendaftaranSiswaOURMEDAN atau ikuti webinar gratis' },
-              { num: '2️⃣', title: 'Pahami Program', desc: 'Baca semua info & pastikan siap berkomitmen 7 bulan' },
-              { num: '3️⃣', title: 'Isi Formulir', desc: 'Data BENAR dan SESUAI dengan ketentuan yang berlaku' },
-              { num: '4️⃣', title: 'Upload Dokumen Asli', desc: 'Pas foto, KTP, Ijazah (bukan fotocopy!)' },
-              { num: '5️⃣', title: 'Konfirmasi via WhatsApp', desc: 'Hubungi nomor yang tertera di formulir setelah submit' },
-              { num: '6️⃣', title: 'Tunggu Hasil', desc: 'Admin verifikasi dokumen & hubungi Anda dalam 1-2 minggu' }
-            ].map((step, idx) => (
-              <div key={idx} className="flex gap-6 bg-white p-6 rounded-lg shadow border-l-4 border-purple-600">
-                <div className="text-4xl flex-shrink-0">{step.num}</div>
-                <div>
-                  <h3 className="font-bold text-lg text-gray-800 mb-2">{step.title}</h3>
-                  <p className="text-gray-700">{step.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pelayanan Komprehensif */}
-      <section className="py-20 bg-gradient-to-r from-cyan-50 to-blue-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">5 Pelayanan Komprehensif OUR</h2>
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
-            {[
-              { icon: '🎓', title: 'Perekrutan & Pendidikan', desc: 'Pelatihan gratis di 5 negara dengan pengajar berpengalaman' },
-              { icon: '🤝', title: 'Perkenalan User Jepang', desc: 'Jaringan luas dengan employer di berbagai industri' },
-              { icon: '📋', title: 'Bantuan Visa', desc: 'Proses lengkap visa Tokutei Ginou dari awal hingga approval' },
-              { icon: '✈️', title: 'Dukungan Penerimaan', desc: 'Tempat tinggal & pelatihan adaptasi budaya Jepang' },
-              { icon: '💪', title: 'Support 5 Tahun', desc: 'Pendidikan berkelanjutan & mentoring dari staff luar negeri' },
-              { icon: '🌍', title: 'Kehadiran Global', desc: '7 lokasi, 9,357+ siswa, 5,077+ bekerja di Jepang' }
-            ].map((service, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-cyan-600">
-                <div className="text-4xl mb-3">{service.icon}</div>
-                <h3 className="font-bold text-lg text-gray-800 mb-2">{service.title}</h3>
-                <p className="text-gray-700 text-sm">{service.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact & Final CTA */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Hubungi Kami</h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 mb-12">
-            <a href="tel:+6281168888844" className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition">
-              <div className="text-5xl mb-4">📱</div>
-              <h3 className="text-xl font-bold mb-2">WhatsApp</h3>
-              <p className="text-blue-100 mb-4">Tanya & Konfirmasi</p>
-              <p className="font-bold">0811 6888 8844</p>
-            </a>
-
-            <a href="https://instagram.com/onoderauserrun.mdn" target="_blank" className="bg-gradient-to-br from-pink-600 to-pink-800 text-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition">
-              <div className="text-5xl mb-4">📸</div>
-              <h3 className="text-xl font-bold mb-2">Instagram</h3>
-              <p className="text-pink-100 mb-4">Info & Update</p>
-              <p className="font-bold">@onoderauserrun.mdn</p>
-            </a>
-
-            <a href="https://maps.google.com/?q=Universitas+Sari+Mutiara+Indonesia+Medan" target="_blank" className="bg-gradient-to-br from-green-600 to-green-800 text-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition">
-              <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-xl font-bold mb-2">Lokasi</h3>
-              <p className="text-green-100 mb-4">Kunjungi Kami</p>
-              <p className="font-bold text-sm">Universitas Sari Mutiara<br/>Medan</p>
-            </a>
-          </div>
-
-          <div className="text-center">
-            <p className="text-gray-600 mb-8 text-lg">Jam Belajar: Senin-Jumat 08:00 - 17:00 WIB</p>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
@@ -371,7 +290,7 @@ export default function Home() {
             Siap Wujudkan Impianmu?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Jangan tunda lagi! Pendaftaran Batch 55 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
+            Jangan tunda lagi! Pendaftaran Batch 5 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
