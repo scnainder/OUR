@@ -18,17 +18,23 @@ export default function Header() {
           <Link href="/" className="hover:text-blue-200 transition font-medium">
             Home
           </Link>
+          <Link href="/about" className="hover:text-blue-200 transition font-medium">
+            Tentang OUR
+          </Link>
           <Link href="/program" className="hover:text-blue-200 transition font-medium">
             Program
           </Link>
+          <Link href="/benefits" className="hover:text-blue-200 transition font-medium">
+            Biaya
+          </Link>
           <Link href="/requirements" className="hover:text-blue-200 transition font-medium">
-            Syarat & Ketentuan
+            Syarat
           </Link>
           <Link href="/registration" className="hover:text-blue-200 transition font-medium">
-            Cara Daftar
+            Daftar
           </Link>
           <a href="tel:+6281168888844" className="px-4 py-2 bg-yellow-400 text-blue-900 font-bold rounded hover:bg-yellow-300 transition">
-            Hubungi Kami
+            Hubungi
           </a>
         </nav>
 
@@ -47,14 +53,20 @@ export default function Header() {
           <Link href="/" className="block hover:text-blue-200 transition font-medium py-2">
             Home
           </Link>
+          <Link href="/about" className="block hover:text-blue-200 transition font-medium py-2">
+            Tentang OUR
+          </Link>
           <Link href="/program" className="block hover:text-blue-200 transition font-medium py-2">
             Program
           </Link>
+          <Link href="/benefits" className="block hover:text-blue-200 transition font-medium py-2">
+            Biaya
+          </Link>
           <Link href="/requirements" className="block hover:text-blue-200 transition font-medium py-2">
-            Syarat & Ketentuan
+            Syarat
           </Link>
           <Link href="/registration" className="block hover:text-blue-200 transition font-medium py-2">
-            Cara Daftar
+            Daftar
           </Link>
           <a href="tel:+6281168888844" className="block px-4 py-2 bg-yellow-400 text-blue-900 font-bold rounded hover:bg-yellow-300 transition text-center">
             Hubungi Kami

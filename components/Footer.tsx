@@ -21,21 +21,21 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Program</h4>
+            <h4 className="text-white font-semibold mb-4">Informasi</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/program" className="hover:text-white transition">Tentang Program</Link></li>
-              <li><Link href="/program" className="hover:text-white transition">Manfaat</Link></li>
-              <li><Link href="/program" className="hover:text-white transition">Kurikulum</Link></li>
-              <li><Link href="/program" className="hover:text-white transition">Tingkat Kelulusan</Link></li>
+              <li><Link href="/about" className="hover:text-white transition">Tentang OUR</Link></li>
+              <li><Link href="/program" className="hover:text-white transition">Program Details</Link></li>
+              <li><Link href="/benefits" className="hover:text-white transition">Biaya</Link></li>
+              <li><Link href="/requirements" className="hover:text-white transition">Syarat</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Pendaftaran</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/requirements" className="hover:text-white transition">Syarat & Ketentuan</Link></li>
               <li><Link href="/registration" className="hover:text-white transition">Cara Daftar</Link></li>
-              <li><Link href="/registration" className="hover:text-white transition">Hubungi Kami</Link></li>
+              <li><a href="tel:+6281168888844" className="hover:text-white transition">Hubungi WhatsApp</a></li>
+              <li><a href="https://instagram.com/onoderauserrun.mdn" target="_blank" className="hover:text-white transition">Follow Instagram</a></li>
             </ul>
           </div>
 
