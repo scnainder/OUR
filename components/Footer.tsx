@@ -126,7 +126,7 @@ export default function Footer() {
             </div>
             <div>
               <h5 className="text-white font-semibold mb-3">Dimulai</h5>
-              <p className="text-sm text-slate-400">7 September 2026 (Batch 55)</p>
+              <p className="text-sm text-slate-400">2 November 2026 (Batch 6)</p>
             </div>
           </div>
 

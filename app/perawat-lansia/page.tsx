@@ -30,7 +30,7 @@ export default function PerawatLansia() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <div className="inline-block mb-6 px-4 py-2 bg-blue-400 rounded-full text-sm font-semibold">
-              🎓 BATCH 5 - Pendaftaran Dibuka
+              🎓 BATCH 6 - Pendaftaran Dibuka
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -43,7 +43,7 @@ export default function PerawatLansia() {
 
             <div className="grid grid-cols-3 gap-6 mt-16">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">7 SEP</div>
+                <div className="text-4xl font-bold mb-2">2 NOV</div>
                 <p className="text-blue-100 text-sm md:text-base">Mulai Pelatihan</p>
               </div>
               <div className="text-center">
@@ -401,7 +401,7 @@ export default function PerawatLansia() {
             Siap Wujudkan Impianmu?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Jangan tunda lagi! Pendaftaran Batch 5 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
+            Jangan tunda lagi! Pendaftaran Batch 6 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"

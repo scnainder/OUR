@@ -29,7 +29,7 @@ export default function Program() {
                 Program ini sudah beroperasi di berbagai negara termasuk <strong>Indonesia, Filipina, Myanmar, Laos, Uzbekistan, dan India</strong> dengan total lebih dari <strong>9,357 siswa</strong> yang telah lulus dan bekerja di Jepang.
               </p>
               <p className="text-lg text-gray-700">
-                OUR Medan dimulai pada <strong>7 September 2026 (Batch 55)</strong> dan berlokasi di <strong>Universitas Sari Mutiara Indonesia</strong>.
+                OUR Medan dimulai pada <strong>2 November 2026 (Batch 6)</strong> dan berlokasi di <strong>Universitas Sari Mutiara Indonesia</strong>.
               </p>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Program() {
                 <div className="space-y-4">
                   <div>
                     <p className="text-sm text-blue-200">Mulai Pelatihan</p>
-                    <p className="text-3xl font-bold">7 September 2026</p>
+                    <p className="text-3xl font-bold">2 November 2026</p>
                   </div>
                   <div>
                     <p className="text-sm text-blue-200">Durasi</p>
@@ -254,7 +254,7 @@ export default function Program() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Siap Memulai Perjalanan Anda?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Pastikan Anda memenuhi semua syarat, kemudian daftarkan diri Anda sekarang untuk Batch 55!
+            Pastikan Anda memenuhi semua syarat, kemudian daftarkan diri Anda sekarang untuk Batch 6!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

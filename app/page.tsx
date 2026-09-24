@@ -20,7 +20,7 @@ export default function Gateway() {
   > = {
     lansia: {
       title: 'Perawat Lansia (KAIGO)',
-      subtitle: 'Batch 55 — mulai 7 September 2026',
+      subtitle: 'Batch 6 — mulai 2 November 2026',
       color: 'blue',
       requirements: [
         'Usia 17-28 tahun (wajib genap 18 tahun)',
