@@ -404,7 +404,7 @@ export default function PerawatLansia() {
             Jangan tunda lagi! Pendaftaran Batch 6 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScJ-5nf2SwVLTWXwoysDFwEl81cNi-MbaI2PasTLT-mWlJBIw/viewform"
             target="_blank"
             onClick={handleCTAClick}
             className="inline-block px-12 py-5 bg-yellow-400 text-blue-900 font-bold rounded-lg hover:bg-yellow-300 transition text-xl cursor-pointer"

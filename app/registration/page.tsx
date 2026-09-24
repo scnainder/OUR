@@ -225,7 +225,7 @@ export default function Registration() {
             Ikuti 6 langkah di atas dan mulai perjalanan Anda menuju karir internasional di Jepang!
           </p>
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScJ-5nf2SwVLTWXwoysDFwEl81cNi-MbaI2PasTLT-mWlJBIw/viewform"
             target="_blank"
             className="inline-block px-10 py-4 bg-yellow-400 text-purple-900 font-bold rounded-lg hover:bg-yellow-300 transition text-lg"
           >

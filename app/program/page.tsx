@@ -264,7 +264,7 @@ export default function Program() {
               Lihat Syarat Lengkap
             </Link>
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScJ-5nf2SwVLTWXwoysDFwEl81cNi-MbaI2PasTLT-mWlJBIw/viewform"
               target="_blank"
               className="px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition"
             >
