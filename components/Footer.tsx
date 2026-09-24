@@ -5,7 +5,12 @@ import { usePathname } from 'next/navigation'
 
 export default function Footer() {
   const pathname = usePathname()
+  const isGateway = pathname === '/'
   const isLayananMakanan = pathname?.startsWith('/layanan-makanan')
+
+  if (isGateway) {
+    return null
+  }
 
   if (isLayananMakanan) {
     return (

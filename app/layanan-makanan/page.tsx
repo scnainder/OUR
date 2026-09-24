@@ -181,10 +181,10 @@ export default function LayananMakanan() {
               persyaratan yang berbeda. Anda dapat mendaftar di program tersebut sebagai alternatif.
             </p>
             <Link
-              href="/requirements"
+              href="/perawat-lansia"
               className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition"
             >
-              Lihat Syarat Perawat Lansia →
+              Lihat Program Perawat Lansia →
             </Link>
           </div>
         </div>
