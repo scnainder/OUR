@@ -27,7 +27,7 @@ export default function Registration() {
     {
       number: 3,
       title: 'Isi Formulir Pendaftaran',
-      description: 'Isi formulir pendaftaran Batch 55 dengan data yang BENAR dan SESUAI dengan ketentuan.',
+      description: 'Isi formulir pendaftaran Batch 6 dengan data yang BENAR dan SESUAI dengan ketentuan.',
       details: [
         'Isi semua kolom yang diperlukan',
         'Periksa kembali data sebelum submit',
@@ -75,7 +75,7 @@ export default function Registration() {
             ← Kembali ke Home
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold">Cara Mendaftar</h1>
-          <p className="text-xl text-purple-100 mt-4">Langkah demi Langkah Proses Pendaftaran Batch 55</p>
+          <p className="text-xl text-purple-100 mt-4">Langkah demi Langkah Proses Pendaftaran Batch 6</p>
         </div>
       </section>
 
@@ -189,7 +189,7 @@ export default function Registration() {
               },
               {
                 q: 'Apakah saya bisa mendaftar jika tinggal di luar Medan?',
-                a: 'Ya, Anda bisa mendaftar dari mana saja. Namun, Anda harus hadir untuk mengikuti pelatihan di Medan mulai 7 September 2026.'
+                a: 'Ya, Anda bisa mendaftar dari mana saja. Namun, Anda harus hadir untuk mengikuti pelatihan di Medan mulai 2 November 2026.'
               },
               {
                 q: 'Apakah formulir bisa diisi berkali-kali?',
@@ -225,7 +225,7 @@ export default function Registration() {
             Ikuti 6 langkah di atas dan mulai perjalanan Anda menuju karir internasional di Jepang!
           </p>
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfuEPShTwZYYtfSCGo8_y6S3_YPyfF4Aq2uDt1R7pGmeHP6-w/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScJ-5nf2SwVLTWXwoysDFwEl81cNi-MbaI2PasTLT-mWlJBIw/viewform"
             target="_blank"
             className="inline-block px-10 py-4 bg-yellow-400 text-purple-900 font-bold rounded-lg hover:bg-yellow-300 transition text-lg"
           >
