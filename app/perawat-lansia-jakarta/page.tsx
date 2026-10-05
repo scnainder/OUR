@@ -408,7 +408,7 @@ export default function PerawatLansiaJakarta() {
             Jangan tunda lagi! Pendaftaran Batch 25 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
           </p>
           <a
-            href="https://bit.ly/PendaftaranSiswaOURJKT"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd_4fm2N1md7sz2mUsp4GM3xy2Y-vPTSnxL8hOImHluAHpjfA/viewform"
             target="_blank"
             onClick={handleCTAClick}
             className="inline-block px-12 py-5 bg-yellow-400 text-blue-900 font-bold rounded-lg hover:bg-yellow-300 transition text-xl cursor-pointer"
