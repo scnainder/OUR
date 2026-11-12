@@ -72,6 +72,13 @@ export default function LayananMakanan() {
           <p className="text-xl text-orange-100 mt-4">
             Program pelatihan bidang Layanan Makanan untuk bekerja di Jepang — Batch 6, pelatihan dimulai 2 November 2026
           </p>
+          <img
+            src="https://cdn.scalev.com/uploads/1794465972/-og6YVWP1iNJoCvHK2N0hQ/1794465972849-IMG_0248.jpeg"
+            alt="Grand Opening OUR Blooming Academy"
+            width={543}
+            height={245}
+            className="mt-8 w-full max-w-2xl rounded-xl shadow-xl border-4 border-white/30"
+          />
         </div>
       </section>
 
@@ -130,6 +137,21 @@ export default function LayananMakanan() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Alumni berangkat ke Jepang */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-orange-700">Siswa OUR yang Sudah Berangkat ke Jepang</h2>
+          <img
+            src="https://cdn.scalev.com/uploads/1794465965/Z4KRUYg9m-JTMPjviTyD9A/1794465964963-IMG_0247.jpeg"
+            alt="731 siswa OUR sudah sampai di Jepang"
+            width={1920}
+            height={1433}
+            loading="lazy"
+            className="mx-auto w-full max-w-3xl rounded-xl shadow-xl"
+          />
         </div>
       </section>
 
