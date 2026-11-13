@@ -69,7 +69,7 @@ export default function Gateway() {
               <div
                 key={key}
                 className={`rounded-2xl overflow-hidden shadow-2xl transition ${
-                  isBlue ? 'bg-blue-600' : 'bg-orange-600'
+                  isBlue ? 'bg-blue-600 order-2 md:order-1' : 'bg-orange-600 order-1 md:order-2'
                 }`}
               >
                 <button
