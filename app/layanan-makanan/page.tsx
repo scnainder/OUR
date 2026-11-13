@@ -70,7 +70,7 @@ export default function LayananMakanan() {
           <p className="uppercase tracking-wide text-orange-200 font-semibold mb-2">OUR Blooming Academy</p>
           <h1 className="text-4xl md:text-5xl font-bold">Persyaratan Layanan Makanan</h1>
           <p className="text-xl text-orange-100 mt-4">
-            Program pelatihan bidang Layanan Makanan untuk bekerja di Jepang — Batch 6, pelatihan dimulai 2 November 2026
+            Program pelatihan bidang Layanan Makanan untuk bekerja di Jepang — Batch 6, pelatihan dimulai 9 Desember 2026
           </p>
           <img
             src="https://cdn.scalev.com/uploads/1794465972/-og6YVWP1iNJoCvHK2N0hQ/1794465972849-IMG_0248.jpeg"
@@ -244,7 +244,7 @@ export default function LayananMakanan() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-orange-50 border-l-4 border-orange-600 p-6 rounded">
             <p className="text-orange-900 font-semibold mb-1">Jadwal Pelatihan</p>
-            <p className="text-orange-800">Batch 6 — Pelatihan dimulai 2 November 2026</p>
+            <p className="text-orange-800">Batch 6 — Pelatihan dimulai 9 Desember 2026</p>
           </div>
         </div>
       </section>
