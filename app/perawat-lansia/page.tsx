@@ -401,7 +401,7 @@ export default function PerawatLansia() {
             Siap Wujudkan Impianmu?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Jangan tunda lagi! Pendaftaran Batch 6 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
+            Jangan tunda lagi! Pendaftaran Batch 8 terbuka sekarang. Ribuan alumni OUR sudah sukses bekerja di Jepang.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScJ-5nf2SwVLTWXwoysDFwEl81cNi-MbaI2PasTLT-mWlJBIw/viewform"
