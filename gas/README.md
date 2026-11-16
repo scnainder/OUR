@@ -7,3 +7,4 @@ Baris pertama tiap file: `VERSI X.Y - <PEMBUAT>`.
 |-------|---------|------|---------|
 | 4.1 | Gemini | `Versi_4.1_Gemini.gs` | Baseline awal (disimpan apa adanya) |
 | 4.2 | Claude | `Versi_4.2_Claude.gs` | Perbaikan sinkronisasi kalender (7 poin) |
+| 4.3 | Claude | `Versi_4.3_Claude.gs` | Sinkron kalender: jendela 30 hari lalu, normalisasi email, menu diagnosa |
