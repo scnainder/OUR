@@ -14,3 +14,4 @@ Baris pertama tiap file: `VERSI X.Y - <PEMBUAT>`.
 | 4.6 | Claude | `Versi_4.6_Claude_AKUN-B_SinkronKalender.gs` | Script AKUN B: setNumberFormat try/catch (error kolom bertipe). Akun A tetap 4.4 |
 | 4.7 | Claude | `Versi_4.7_Claude_AKUN-B_SinkronKalender.gs` | Script AKUN B: tulis sel 3 strategi, gagal satu sel tidak menghentikan proses. Akun A tetap 4.4 |
 | 4.8 | Claude | `Versi_4.8_Claude.gs` | Script AKUN A: perbaikan alur CQI (poller 10 menit, tidak bergantung AutoTrigger!A1, menu Cek CQI). WAJIB jalankan INSTALL_SEMUA_TRIGGER |
+| 4.9 | Claude | `Versi_4.9_Claude.gs` | Script AKUN A: Meta CAPI kirim fn, ln, st, country, external_id (di-hash). Dasar: 4.8 |
