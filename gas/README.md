@@ -11,3 +11,4 @@ Baris pertama tiap file: `VERSI X.Y - <PEMBUAT>`.
 | 4.4 | Claude | `Versi_4.4_Claude.gs` | Script AKUN A (email/validasi): sinkron kalender dihapus |
 | 4.4 | Claude | `Versi_4.4_Claude_AKUN-B_SinkronKalender.gs` | Script terpisah AKUN B: sinkron kalender (isi SPREADSHEET_ID, lihat petunjuk di header file) |
 | 4.5 | Claude | `Versi_4.5_Claude_AKUN-B_SinkronKalender.gs` | Script AKUN B: perbaiki error toast di project standalone (script akun A tetap 4.4) |
+| 4.6 | Claude | `Versi_4.6_Claude_AKUN-B_SinkronKalender.gs` | Script AKUN B: setNumberFormat try/catch (error kolom bertipe). Akun A tetap 4.4 |
