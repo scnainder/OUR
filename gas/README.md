@@ -17,3 +17,4 @@ Baris pertama tiap file: `VERSI X.Y - <PEMBUAT>`.
 | 4.9 | Claude | `Versi_4.9_Claude.gs` | Script AKUN A: Meta CAPI kirim fn, ln, st, country, external_id (di-hash). Dasar: 4.8 |
 | 4.10 | Claude | `Versi_4.10_Claude.gs` | Script AKUN A: Meta CAPI + jenis kelamin (ge) & tanggal lahir (db) via judul kolom; 介護 kirim content_category=Perawat. Dasar: 4.9 |
 | 4.11 | Claude | `Versi_4.11_Claude.gs` | Script AKUN A: koreksi kolom jenis kelamin = W (bukan G); tanggal lahir = X. Dasar: 4.10 |
+| 4.12 | Claude | `Versi_4.12_Claude.gs` | Script AKUN A: email pendaftaran tahan trigger macet (+poll 10 menit), reminder "HARI TERAKHIR" psikotes CQI (kolom BW, BT+3 hari). WAJIB jalankan INSTALL_SEMUA_TRIGGER. Dasar: 4.11 |
