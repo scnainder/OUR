@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-24T05:07:32.939Z",
+  "updatedAt": "2026-11-24T06:16:00.702Z",
   "ratings": {
     "wise": {
       "ios": {
         "score": 4.68,
-        "count": 28353,
+        "count": 28345,
         "url": "https://apps.apple.com/jp/app/wise/id612261027?uo=4"
       },
       "play": {
         "score": 4.66,
-        "count": 2142204,
+        "count": 2142246,
         "url": "https://play.google.com/store/apps/details?id=com.transferwise.android"
       }
     },
@@ -21,7 +21,7 @@
       },
       "play": {
         "score": 4.41,
-        "count": 1729558,
+        "count": 1729600,
         "url": "https://play.google.com/store/apps/details?id=com.remitly.androidapp"
       }
     },
@@ -81,7 +81,7 @@
       },
       "play": {
         "score": 4.73,
-        "count": 10124,
+        "count": 10128,
         "url": "https://play.google.com/store/apps/details?id=com.digitalwalletcorp.app.smiles"
       }
     },
@@ -112,8 +112,20 @@
       },
       "play": {
         "score": 4.07,
-        "count": 194933,
+        "count": 194941,
         "url": "https://play.google.com/store/apps/details?id=com.paysend.app"
+      }
+    },
+    "payforex": {
+      "ios": {
+        "score": 4.71,
+        "count": 13556,
+        "url": "https://apps.apple.com/jp/app/%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91-payforex/id1576337948?uo=4"
+      },
+      "play": {
+        "score": 4.63,
+        "count": 6787,
+        "url": "https://play.google.com/store/apps/details?id=net.payforex.mobile"
       }
     }
   }

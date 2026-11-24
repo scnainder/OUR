@@ -1,15 +1,98 @@
 {
-  "_catatan": "Ganti affiliateUrl dengan link afiliasi kamu. iosId = trackId App Store Jepang, playId = package Play Store. rateSource: wise-api (otomatis, tiap jam) | scrape (otomatis, tiap jam) | manual (isi data/manual-rates.json).",
+  "_catatan": "Ganti affiliateUrl dengan link afiliasi kamu. iosId = trackId App Store Jepang, playId = package Play Store. rateSource: wise-api (otomatis tiap jam) | manual (diisi scripts/scan-manual.mjs / data/manual-rates.json; lihat docs/kurs-playbook.md). info = catatan yang tampil bila kurs belum tersedia.",
   "providers": [
-    { "alias": "wise", "name": "Wise", "affiliateUrl": "https://wise.com/", "iosId": 612261027, "playId": "com.transferwise.android", "rateSource": "wise-api" },
-    { "alias": "remitly", "name": "Remitly", "affiliateUrl": "https://www.remitly.com/", "iosId": 674258465, "playId": "com.remitly.androidapp", "rateSource": "scrape", "scrapeUrl": "https://www.remitly.com/jp/en/indonesia" },
-    { "alias": "instarem", "name": "Instarem", "affiliateUrl": "https://www.instarem.com/", "iosId": 1190075959, "playId": "com.instarem.mobileapp", "rateSource": "wise-api" },
-    { "alias": "sbi-remit", "name": "SBI Remit", "affiliateUrl": "https://www.sbiremit.co.jp/", "iosId": 6755135538, "playId": "jp.co.remit.sbiremit.renewal", "rateSource": "wise-api" },
-    { "alias": "western-union", "name": "Western Union", "affiliateUrl": "https://www.westernunion.com/jp/", "iosId": 1437019338, "playId": "com.westernunion.moneytransferr3app.jp", "rateSource": "manual" },
-    { "alias": "brastel", "name": "Brastel Remit", "affiliateUrl": "https://www.brastelremit.jp/", "iosId": 1294541529, "playId": "com.brastelremit", "rateSource": "manual" },
-    { "alias": "smiles", "name": "Smiles Remittance", "affiliateUrl": "https://www.smilesremit.jp/", "iosId": 1238568245, "playId": "com.digitalwalletcorp.app.smiles", "rateSource": "manual" },
-    { "alias": "gme", "name": "GME Remit", "affiliateUrl": "https://www.gmeremit.com/", "iosId": 1439161261, "playId": "com.gmeremit.online.gmeremittance_native", "rateSource": "manual" },
-    { "alias": "kyodai", "name": "Kyodai Remittance", "affiliateUrl": "https://www.kyodai-remittance.com/", "iosId": 1485912163, "playId": "jp.co.kyodai.KyodaiApp", "rateSource": "manual" },
-    { "alias": "paysend", "name": "Paysend", "affiliateUrl": "https://paysend.com/", "iosId": 1140130413, "playId": "com.paysend.app", "rateSource": "manual" }
+    {
+      "alias": "wise",
+      "name": "Wise",
+      "affiliateUrl": "https://wise.com/",
+      "iosId": 612261027,
+      "playId": "com.transferwise.android",
+      "rateSource": "wise-api"
+    },
+    {
+      "alias": "remitly",
+      "name": "Remitly",
+      "affiliateUrl": "https://www.remitly.com/",
+      "iosId": 674258465,
+      "playId": "com.remitly.androidapp",
+      "rateSource": "manual"
+    },
+    {
+      "alias": "instarem",
+      "name": "Instarem",
+      "affiliateUrl": "https://www.instarem.com/",
+      "iosId": 1190075959,
+      "playId": "com.instarem.mobileapp",
+      "rateSource": "wise-api"
+    },
+    {
+      "alias": "sbi-remit",
+      "name": "SBI Remit",
+      "affiliateUrl": "https://www.sbiremit.co.jp/",
+      "iosId": 6755135538,
+      "playId": "jp.co.remit.sbiremit.renewal",
+      "rateSource": "wise-api"
+    },
+    {
+      "alias": "western-union",
+      "name": "Western Union",
+      "affiliateUrl": "https://www.westernunion.com/jp/",
+      "iosId": 1437019338,
+      "playId": "com.westernunion.moneytransferr3app.jp",
+      "rateSource": "manual",
+      "info": "Kurs di situsnya baru terlihat pasti untuk transfer pertama (promo). Cek langsung sebelum kirim."
+    },
+    {
+      "alias": "brastel",
+      "name": "Brastel Remit",
+      "affiliateUrl": "https://www.brastelremit.jp/",
+      "iosId": 1294541529,
+      "playId": "com.brastelremit",
+      "rateSource": "manual"
+    },
+    {
+      "alias": "smiles",
+      "name": "Smiles Remittance",
+      "affiliateUrl": "https://www.smileswallet.com/japan/",
+      "iosId": 1238568245,
+      "playId": "com.digitalwalletcorp.app.smiles",
+      "rateSource": "manual"
+    },
+    {
+      "alias": "gme",
+      "name": "GME Remit",
+      "affiliateUrl": "https://www.gmeremit.com/",
+      "iosId": 1439161261,
+      "playId": "com.gmeremit.online.gmeremittance_native",
+      "rateSource": "manual",
+      "info": "Kalkulator situsnya belum mendukung pengiriman dari Jepang. Cek di aplikasi."
+    },
+    {
+      "alias": "kyodai",
+      "name": "Kyodai Remittance",
+      "affiliateUrl": "https://kyodairemittance.com/",
+      "iosId": 1485912163,
+      "playId": "jp.co.kyodai.KyodaiApp",
+      "rateSource": "manual",
+      "info": "Sekarang bagian dari Ria. Kurs hanya tampil di situs/aplikasi resmi (situsnya memblokir pembaca otomatis)."
+    },
+    {
+      "alias": "paysend",
+      "name": "Paysend",
+      "affiliateUrl": "https://paysend.com/",
+      "iosId": 1140130413,
+      "playId": "com.paysend.app",
+      "rateSource": "manual",
+      "info": "Kalkulator situsnya belum menampilkan Jepang → Indonesia. Cek di aplikasi."
+    },
+    {
+      "alias": "payforex",
+      "name": "PayForex",
+      "affiliateUrl": "https://www.payforex.net/",
+      "iosId": 1576337948,
+      "playId": "net.payforex.mobile",
+      "rateSource": "manual",
+      "info": "Biaya publik mulai ¥480 (rekening bank IDR), gratis untuk ¥600.000 ke atas. Kurs hanya terlihat setelah login."
+    }
   ]
 }

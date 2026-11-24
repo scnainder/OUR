@@ -5,8 +5,8 @@ import { useEffect, useMemo, useState } from 'react'
 type Quote = { rate: number; fee: number; received: number; feeKnown: boolean }
 type Model =
   | { type: 'points'; points: { amount: number; rate: number; fee: number }[] }
-  | { type: 'flat'; rate: number; fee: number | null; feePct: number; feeKnown: boolean }
-type Provider = { alias: string; name: string; affiliateUrl: string | null; source: 'api' | 'scrape' | 'manual' | 'none'; asOf: string | null; model: Model | null }
+  | { type: 'flat'; rate: number; fee: number | null; feePct: number; feeKnown: boolean; tiers?: [number, number][] | null; max?: number | null; note?: string | null }
+type Provider = { alias: string; name: string; affiliateUrl: string | null; info?: string | null; source: 'api' | 'scrape' | 'manual' | 'none'; asOf: string | null; model: Model | null }
 type Rates = { updatedAt: string; chips: number[]; minAmount: number; maxAmount: number; midMarket: number | null; providers: Provider[] }
 type Store = { score: number; count: number; url: string }
 type Ratings = { updatedAt: string; ratings: Record<string, { ios?: Store; play?: Store }> }
@@ -25,7 +25,9 @@ function quote(p: Provider, amount: number): Quote | null {
   if (!m) return null
   let rate: number, fee: number, feeKnown = true
   if (m.type === 'flat') {
+    if (m.max && amount > m.max) return null
     rate = m.rate; fee = (m.fee ?? 0) + (m.feePct / 100) * amount; feeKnown = m.feeKnown
+    if (m.tiers) fee = (m.tiers.find(([upTo]) => amount <= upTo) ?? m.tiers[m.tiers.length - 1])[1]
   } else {
     const pts = m.points
     if (!pts.length || amount < pts[0].amount || amount > pts[pts.length - 1].amount) return null
@@ -144,6 +146,7 @@ export default function KursTable() {
                     <Stars label="App Store" s={r?.ios} />
                     <Stars label="Play Store" s={r?.play} />
                   </div>
+                  {p.model?.type === 'flat' && p.model.note && <div className="text-xs text-emerald-700 mt-1">ℹ️ {p.model.note}</div>}
                   {p.source === 'manual' && p.asOf && <div className="text-xs text-gray-400 mt-1">Kurs per {fmtDate(p.asOf)}</div>}
                 </div>
                 <div className="text-right">
@@ -171,7 +174,7 @@ export default function KursTable() {
                   <Stars label="App Store" s={r?.ios} />
                   <Stars label="Play Store" s={r?.play} />
                 </div>
-                <div className="text-sm text-gray-500 mt-1">Kurs hari ini belum tersedia, cek langsung di situs</div>
+                <div className="text-sm text-gray-500 mt-1">{p.info ?? 'Kurs hari ini belum tersedia, cek langsung di situs'}</div>
               </div>
               {p.affiliateUrl && (
                 <a href={p.affiliateUrl} target="_blank" rel="sponsored noopener noreferrer" className="px-5 py-2.5 border border-emerald-600 text-emerald-700 font-bold rounded-lg hover:bg-emerald-50 transition">
