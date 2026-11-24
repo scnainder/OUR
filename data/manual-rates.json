@@ -2,7 +2,7 @@
   "_catatan": "Isi kurs provider yang tidak bisa di-scrape. Format: \"alias\": { \"rate\": 114.2, \"fee\": 500, \"feePct\": 0, \"updatedAt\": \"2026-11-24\" }. rate = IDR per 1 JPY, fee = biaya tetap (JPY), feePct = biaya persen (opsional). Rumus: diterima = (nominal - biaya) x rate. Kosong = tampil 'Cek kurs'. Data lebih dari 3 hari otomatis disembunyikan. Opsional: tiers = [[batas_atas_JPY, biaya_JPY], ...] untuk biaya bertingkat; max = batas kirim per transaksi (JPY).",
   "rates": {
     "brastel": {
-      "rate": 114.3,
+      "rate": 114.4,
       "tiers": [
         [
           10000,
@@ -34,9 +34,9 @@
       "updatedAt": "2026-11-24"
     },
     "remitly": {
-      "rate": 113.95,
+      "rate": 113.89,
       "fee": 100,
-      "note": "Promo pelanggan baru: ¥1 = Rp 114.66, bebas biaya (untuk ¥100.000 pertama)",
+      "note": "Promo pelanggan baru: ¥1 = Rp 114.59, bebas biaya (untuk ¥100.000 pertama)",
       "updatedAt": "2026-11-24"
     },
     "smiles": {
@@ -61,6 +61,30 @@
       ],
       "max": 1000000,
       "note": "Biaya & kurs kirim lewat Smiles (bukan jalur Ria)",
+      "updatedAt": "2026-11-24"
+    },
+    "city-express": {
+      "rate": 113.85,
+      "tiers": [
+        [
+          10000,
+          400
+        ],
+        [
+          50000,
+          500
+        ],
+        [
+          250000,
+          1000
+        ],
+        [
+          1000000,
+          1500
+        ]
+      ],
+      "max": 1000000,
+      "note": "Kurs indikatif (halaman City Express: diperbarui Nov 16, 2026, 5:16 PM JST); kurs final tampil di aplikasi",
       "updatedAt": "2026-11-24"
     }
   }

@@ -7,7 +7,7 @@ Dokumen ini adalah **satu-satunya sumber cara** memperbarui kurs. AI/orang yang 
 | Data | Sumber | Seberapa sering | Perintah |
 |---|---|---|---|
 | Wise, Instarem, SBI Remit | API publik Wise Comparisons | tiap jam (GitHub Actions) | `node scripts/update-rates.mjs` |
-| Remitly, Brastel, Smiles | Browser (Playwright) membaca situs resmi | tiap 6 jam (Actions) + tugas harian Claude | `node scripts/scan-manual.mjs` |
+| Remitly, Brastel, Smiles, City Express | Browser (Playwright) membaca situs resmi | tiap 6 jam (Actions) + tugas harian Claude | `node scripts/scan-manual.mjs` |
 | Rating App Store / Play Store | iTunes Lookup API + google-play-scraper | harian | `node scripts/update-ratings.mjs` |
 | Provider tanpa data | tampil kartu "Cek kurs" + catatan `info` | - | edit `data/providers.json` |
 
@@ -49,6 +49,13 @@ Hanya 4 provider yang dikembalikan untuk koridor ini. Diambil pada 9 nominal (¥
 - Kurs: `https://www.smileswallet.com/japan/exchange-rates/`, baris `Indonesia | xxx IDR`.
 - Biaya: `https://www.smileswallet.com/japan/remittance-fee/`, pilih **Indonesia** di `#country_chooser`. Muncul 3 tabel `Send with <logo>`: **tabel pertama = Smiles** (¥450/880/1.480/1.980), kedua = Ria, ketiga = lainnya. Logo berupa gambar, jadi urutan dipakai sebagai penanda (jika halaman berubah, cek visual dengan screenshot).
 - Halaman utama `smileswallet.com` menampilkan simulator generik (PHP/VND), jangan dipakai.
+
+### City Express — `scripts/providers/cityexpress.mjs`
+- Situs resmi `https://cityremit.com/en/` (aplikasi: City Express Japan / City Wallet; mendukung bahasa Indonesia).
+- Kurs: `https://cityremit.com/en/exchange-rates/`, baris `INDONESIA | IDR | 113.85`. Sama persis dengan kalkulator beranda. Halaman mencantumkan "Last updated" (kurs tidak berubah tiap hari, bisa beberapa hari sama); teks itu dimasukkan ke `note`.
+- Biaya: `https://cityremit.com/en/service-fees/`, panel Indonesia (default): ¥2.000–10.000 ¥400; –50.000 ¥500; –250.000 ¥1.000; –1.000.000 ¥1.500 (cash pickup = bank transfer). Maksimal ¥1.000.000.
+- **Total yang dikirim sudah termasuk biaya**: diterima = (total − biaya) × kurs. Terverifikasi di kalkulator beranda (pilih IDR lewat dropdown): ¥100.000 → biaya ¥1.000 → Rp 11.271.150.
+- Jangan pakai kurs "Golden Rate" (khusus Nepal) yang tampil default di kalkulator beranda.
 
 ### PayForex — belum ada kurs
 - Biaya publik: `https://www.payforex.net/fee/remit`, blok Indonesia, rekening bank IDR: ≤¥20.000 ¥480; ≤¥60.000 ¥780; ≤¥300.000 ¥1.180; ≤¥599.999 ¥1.480; ¥600.000–¥1.000.000 gratis. Minimum kirim ¥7.000.
