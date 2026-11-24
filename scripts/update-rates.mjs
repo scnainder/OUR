@@ -1,7 +1,8 @@
 // Kurs JPY -> IDR: API Wise Comparisons + scrape sederhana + data manual. Output: public/rates.json
 import { readFileSync, writeFileSync } from 'node:fs'
 
-const AMOUNTS = [50000, 100000, 300000, 500000, 1000000]
+const AMOUNTS = [10000, 30000, 50000, 100000, 200000, 300000, 500000, 1000000, 2000000]
+const CHIPS = [50000, 100000, 300000, 500000, 1000000]
 const MANUAL_MAX_AGE_DAYS = 3
 const read = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url)))
 const cfg = read('../data/providers.json').providers
@@ -21,7 +22,7 @@ for (const amount of AMOUNTS) {
     for (const p of data.providers ?? []) {
       const q = p.quotes?.[0]
       if (!q?.rate) continue
-      ;(wise[p.alias] ??= {})[amount] = { rate: q.rate, fee: q.fee, received: q.receivedAmount, feeKnown: true }
+      ;(wise[p.alias] ??= []).push({ amount, rate: q.rate, fee: q.fee })
     }
   } catch (e) { console.error('wise gagal', amount, e.message) }
 }
@@ -41,30 +42,28 @@ async function scrape(url) {
 
 const providers = []
 for (const c of cfg) {
-  const quotes = {}
-  let source = 'none', asOf = null
-  if (c.rateSource === 'wise-api' && wise[c.alias]) {
-    Object.assign(quotes, wise[c.alias]); source = 'api'; asOf = new Date().toISOString()
+  let model = null, source = 'none', asOf = null
+  if (c.rateSource === 'wise-api' && wise[c.alias]?.length) {
+    // titik (nominal, kurs, biaya); halaman menginterpolasi untuk nominal bebas
+    model = { type: 'points', points: wise[c.alias].sort((a, b) => a.amount - b.amount) }
+    source = 'api'; asOf = new Date().toISOString()
   } else if (c.rateSource === 'scrape') {
     try {
       const rate = await scrape(c.scrapeUrl)
-      if (rate && sane(rate)) {
-        for (const a of AMOUNTS) quotes[a] = { rate, fee: null, received: a * rate, feeKnown: false }
-        source = 'scrape'; asOf = new Date().toISOString()
-      }
+      if (rate && sane(rate)) { model = { type: 'flat', rate, fee: null, feePct: 0, feeKnown: false }; source = 'scrape'; asOf = new Date().toISOString() }
     } catch (e) { console.error('scrape gagal', c.alias, e.message) }
   }
   const m = manual[c.alias]
-  if (source === 'none' && m?.rate && sane(m.rate)) {
+  if (!model && m?.rate && sane(m.rate)) {
     const ageDays = (Date.now() - new Date(m.updatedAt).getTime()) / 864e5
     if (ageDays <= MANUAL_MAX_AGE_DAYS) {
-      for (const a of AMOUNTS) quotes[a] = { rate: m.rate, fee: m.fee ?? null, received: a * m.rate - (m.fee ?? 0), feeKnown: m.fee != null }
+      model = { type: 'flat', rate: m.rate, fee: m.fee ?? 0, feePct: m.feePct ?? 0, feeKnown: m.fee != null || m.feePct != null }
       source = 'manual'; asOf = new Date(m.updatedAt).toISOString()
     }
   }
-  providers.push({ alias: c.alias, name: c.name, affiliateUrl: c.affiliateUrl, source, asOf, quotes })
+  providers.push({ alias: c.alias, name: c.name, affiliateUrl: c.affiliateUrl, source, asOf, model })
 }
 
 if (!providers.some((p) => p.source !== 'none')) { console.error('Tidak ada data, tidak menimpa.'); process.exit(1) }
-writeFileSync(new URL('../public/rates.json', import.meta.url), JSON.stringify({ updatedAt: new Date().toISOString(), amounts: AMOUNTS, midMarket: mid, providers }, null, 2) + '\n')
+writeFileSync(new URL('../public/rates.json', import.meta.url), JSON.stringify({ updatedAt: new Date().toISOString(), chips: CHIPS, minAmount: AMOUNTS[0], maxAmount: AMOUNTS.at(-1), midMarket: mid, providers }, null, 2) + '\n')
 console.log('OK', providers.map((p) => `${p.alias}:${p.source}`).join(' '))

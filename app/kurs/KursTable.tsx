@@ -2,9 +2,12 @@
 
 import { useEffect, useMemo, useState } from 'react'
 
-type Quote = { rate: number; fee: number | null; received: number; feeKnown: boolean }
-type Provider = { alias: string; name: string; affiliateUrl: string | null; source: 'api' | 'scrape' | 'manual' | 'none'; asOf: string | null; quotes: Record<string, Quote> }
-type Rates = { updatedAt: string; amounts: number[]; midMarket: number | null; providers: Provider[] }
+type Quote = { rate: number; fee: number; received: number; feeKnown: boolean }
+type Model =
+  | { type: 'points'; points: { amount: number; rate: number; fee: number }[] }
+  | { type: 'flat'; rate: number; fee: number | null; feePct: number; feeKnown: boolean }
+type Provider = { alias: string; name: string; affiliateUrl: string | null; source: 'api' | 'scrape' | 'manual' | 'none'; asOf: string | null; model: Model | null }
+type Rates = { updatedAt: string; chips: number[]; minAmount: number; maxAmount: number; midMarket: number | null; providers: Provider[] }
 type Store = { score: number; count: number; url: string }
 type Ratings = { updatedAt: string; ratings: Record<string, { ios?: Store; play?: Store }> }
 
@@ -14,6 +17,25 @@ const avg = (r?: { ios?: Store; play?: Store }) => {
   const xs = [r?.ios, r?.play].filter(Boolean) as Store[]
   const n = xs.reduce((s, x) => s + x.count, 0)
   return n ? xs.reduce((s, x) => s + x.score * x.count, 0) / n : 0
+}
+
+// Rumus: diterima = (nominal - biaya) x kurs. Untuk data 'points', kurs & biaya diinterpolasi linear antar nominal.
+function quote(p: Provider, amount: number): Quote | null {
+  const m = p.model
+  if (!m) return null
+  let rate: number, fee: number, feeKnown = true
+  if (m.type === 'flat') {
+    rate = m.rate; fee = (m.fee ?? 0) + (m.feePct / 100) * amount; feeKnown = m.feeKnown
+  } else {
+    const pts = m.points
+    if (!pts.length || amount < pts[0].amount || amount > pts[pts.length - 1].amount) return null
+    const i = Math.max(0, pts.findIndex((x) => x.amount >= amount))
+    const hi = pts[i], lo = pts[Math.max(0, i - 1)]
+    const t = hi.amount === lo.amount ? 0 : (amount - lo.amount) / (hi.amount - lo.amount)
+    rate = lo.rate + (hi.rate - lo.rate) * t
+    fee = lo.fee + (hi.fee - lo.fee) * t
+  }
+  return { rate, fee, feeKnown, received: Math.max(0, (amount - fee) * rate) }
 }
 
 function Stars({ label, s }: { label: string; s?: Store }) {
@@ -29,6 +51,7 @@ export default function KursTable() {
   const [rates, setRates] = useState<Rates | null>(null)
   const [ratings, setRatings] = useState<Ratings | null>(null)
   const [amount, setAmount] = useState(100000)
+  const [input, setInput] = useState('100000')
   const [sort, setSort] = useState<'kurs' | 'rating'>('kurs')
   const [error, setError] = useState(false)
 
@@ -40,9 +63,12 @@ export default function KursTable() {
 
   const { live, nodata } = useMemo(() => {
     if (!rates) return { live: [] as (Provider & { q: Quote; stars: number })[], nodata: [] as Provider[] }
-    const withQ = rates.providers.filter((p) => p.quotes[amount]).map((p) => ({ ...p, q: p.quotes[amount], stars: avg(ratings?.ratings[p.alias]) }))
+    const withQ = rates.providers.flatMap((p) => {
+      const q = quote(p, amount)
+      return q ? [{ ...p, q, stars: avg(ratings?.ratings[p.alias]) }] : []
+    })
     withQ.sort((a, b) => (sort === 'rating' ? b.stars - a.stars : b.q.received - a.q.received))
-    const nodata = rates.providers.filter((p) => !p.quotes[amount]).sort((a, b) => avg(ratings?.ratings[b.alias]) - avg(ratings?.ratings[a.alias]))
+    const nodata = rates.providers.filter((p) => !quote(p, amount)).sort((a, b) => avg(ratings?.ratings[b.alias]) - avg(ratings?.ratings[a.alias]))
     return { live: withQ, nodata }
   }, [rates, ratings, amount, sort])
 
@@ -54,12 +80,35 @@ export default function KursTable() {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2 mb-3">
-        {rates.amounts.map((a) => (
-          <button key={a} onClick={() => setAmount(a)} className={`px-4 py-2 rounded-full text-sm font-semibold border transition ${a === amount ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-white text-gray-700 border-gray-300 hover:border-emerald-500'}`}>
-            ¥{fmt(a)}
-          </button>
-        ))}
+      <div className="bg-white rounded-xl p-4 border border-gray-200 mb-4">
+        <label className="block text-sm font-semibold text-gray-700 mb-1">Berapa yen yang mau dikirim?</label>
+        <div className="flex items-center gap-2">
+          <span className="text-2xl font-bold text-gray-500">¥</span>
+          <input
+            inputMode="numeric"
+            value={input}
+            onChange={(e) => {
+              const v = e.target.value.replace(/\D/g, '').slice(0, 8)
+              setInput(v)
+              const n = parseInt(v || '0', 10)
+              if (n >= rates.minAmount && n <= rates.maxAmount) setAmount(n)
+            }}
+            className="w-full text-2xl font-bold border-b-2 border-emerald-500 focus:outline-none py-1"
+          />
+        </div>
+        {(() => {
+          const n = parseInt(input || '0', 10)
+          return n < rates.minAmount || n > rates.maxAmount ? (
+            <p className="text-xs text-red-500 mt-1">Masukkan nominal ¥{fmt(rates.minAmount)} – ¥{fmt(rates.maxAmount)}.</p>
+          ) : null
+        })()}
+        <div className="flex flex-wrap gap-2 mt-3">
+          {rates.chips.map((a) => (
+            <button key={a} onClick={() => { setAmount(a); setInput(String(a)) }} className={`px-3 py-1 rounded-full text-sm font-semibold border transition ${a === amount ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-white text-gray-700 border-gray-300 hover:border-emerald-500'}`}>
+              ¥{fmt(a)}
+            </button>
+          ))}
+        </div>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-2 mb-4 text-sm text-gray-600">
         <span>
@@ -89,7 +138,7 @@ export default function KursTable() {
                   </div>
                   <div className="text-sm text-gray-600">
                     Kurs ¥1 = Rp {p.q.rate.toLocaleString('id-ID', { maximumFractionDigits: 2 })} ·{' '}
-                    {p.q.feeKnown ? `Biaya ¥${fmt(p.q.fee ?? 0)}` : 'Biaya: cek di aplikasi'}
+                    {p.q.feeKnown ? `Biaya ¥${fmt(p.q.fee)}` : 'Biaya: cek di aplikasi'}
                   </div>
                   <div className="flex gap-3 mt-1">
                     <Stars label="App Store" s={r?.ios} />
