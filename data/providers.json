@@ -1,0 +1,12 @@
+{
+  "_catatan": "Ganti affiliateUrl dengan link affiliate kamu. 'alias' = id provider dari API Wise Comparisons. Provider dengan auto:false tidak punya API publik, jadi tampil sebagai 'cek kurs' + tombol link.",
+  "providers": [
+    { "alias": "wise", "name": "Wise", "affiliateUrl": "https://wise.com/", "auto": true },
+    { "alias": "instarem", "name": "Instarem", "affiliateUrl": "https://www.instarem.com/", "auto": true },
+    { "alias": "sbi-remit", "name": "SBI Remit", "affiliateUrl": "https://www.sbiremit.co.jp/", "auto": true },
+    { "alias": "smbc-jp", "name": "SMBC", "affiliateUrl": "https://www.smbc.co.jp/", "auto": true },
+    { "alias": "brastel", "name": "Brastel Remit", "affiliateUrl": "https://www.brastelremit.jp/", "auto": false },
+    { "alias": "smile", "name": "Smile Remit", "affiliateUrl": "https://www.smileremit.jp/", "auto": false },
+    { "alias": "remitly", "name": "Remitly", "affiliateUrl": "https://www.remitly.com/", "auto": false }
+  ]
+}

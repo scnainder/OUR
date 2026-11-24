@@ -1,0 +1,186 @@
+{
+  "updatedAt": "2026-11-24T03:44:39.190Z",
+  "amounts": [
+    50000,
+    100000,
+    300000,
+    500000,
+    1000000
+  ],
+  "midMarket": 114.55,
+  "providers": [
+    {
+      "alias": "instarem",
+      "name": "Instarem",
+      "affiliateUrl": "https://www.instarem.com/",
+      "auto": true,
+      "quotes": {
+        "50000": {
+          "rate": 113.6953414925,
+          "fee": 0,
+          "received": 5684767.07,
+          "collectedAt": "2026-11-24T02:24:35.137279Z"
+        },
+        "100000": {
+          "rate": 113.6953414925,
+          "fee": 0,
+          "received": 11369534.15,
+          "collectedAt": "2026-11-24T02:24:35.137279Z"
+        },
+        "300000": {
+          "rate": 113.6953414925,
+          "fee": 0,
+          "received": 34108602.45,
+          "collectedAt": "2026-11-24T02:24:35.137279Z"
+        },
+        "500000": {
+          "rate": 113.6953414925,
+          "fee": 0,
+          "received": 56847670.75,
+          "collectedAt": "2026-11-24T02:24:35.137279Z"
+        },
+        "1000000": {
+          "rate": 113.6953414925,
+          "fee": 0,
+          "received": 113695341.49,
+          "collectedAt": "2026-11-24T02:24:35.137279Z"
+        }
+      }
+    },
+    {
+      "alias": "smbc-jp",
+      "name": "SMBC",
+      "affiliateUrl": "https://www.smbc.co.jp/",
+      "auto": true,
+      "quotes": {
+        "50000": {
+          "rate": 101.0850668798,
+          "fee": 3500,
+          "received": 4700455.61,
+          "collectedAt": "2026-11-24T03:40:15.792576Z"
+        },
+        "100000": {
+          "rate": 101.0850668798,
+          "fee": 3500,
+          "received": 9754708.95,
+          "collectedAt": "2026-11-24T03:40:15.792576Z"
+        },
+        "300000": {
+          "rate": 101.0850668798,
+          "fee": 3500,
+          "received": 29971722.33,
+          "collectedAt": "2026-11-24T03:40:15.792576Z"
+        },
+        "500000": {
+          "rate": 101.0850668798,
+          "fee": 3500,
+          "received": 50188735.71,
+          "collectedAt": "2026-11-24T03:40:15.792576Z"
+        },
+        "1000000": {
+          "rate": 101.0850668798,
+          "fee": 3500,
+          "received": 100731269.15,
+          "collectedAt": "2026-11-24T03:40:15.792576Z"
+        }
+      }
+    },
+    {
+      "alias": "wise",
+      "name": "Wise",
+      "affiliateUrl": "https://wise.com/",
+      "auto": true,
+      "quotes": {
+        "50000": {
+          "rate": 114.466,
+          "fee": 595,
+          "received": 5655193,
+          "collectedAt": "2026-11-24T03:44:37Z"
+        },
+        "100000": {
+          "rate": 114.466,
+          "fee": 976,
+          "received": 11334881,
+          "collectedAt": "2026-11-24T03:44:37Z"
+        },
+        "300000": {
+          "rate": 114.466,
+          "fee": 2505,
+          "received": 34053063,
+          "collectedAt": "2026-11-24T03:44:38Z"
+        },
+        "500000": {
+          "rate": 114.466,
+          "fee": 4034,
+          "received": 56771244,
+          "collectedAt": "2026-11-24T03:44:38Z"
+        },
+        "1000000": {
+          "rate": 114.466,
+          "fee": 7853,
+          "received": 113567099,
+          "collectedAt": "2026-11-24T03:44:38Z"
+        }
+      }
+    },
+    {
+      "alias": "sbi-remit",
+      "name": "SBI Remit",
+      "affiliateUrl": "https://www.sbiremit.co.jp/",
+      "auto": true,
+      "quotes": {
+        "50000": {
+          "rate": 114.1341884461,
+          "fee": 880,
+          "received": 5606271.34,
+          "collectedAt": "2026-11-24T03:40:12.896077Z"
+        },
+        "100000": {
+          "rate": 114.1341884461,
+          "fee": 1480,
+          "received": 11244500.25,
+          "collectedAt": "2026-11-24T03:40:12.896077Z"
+        },
+        "300000": {
+          "rate": 114.1341884461,
+          "fee": 1980,
+          "received": 34014270.84,
+          "collectedAt": "2026-11-24T03:40:12.896077Z"
+        },
+        "500000": {
+          "rate": 114.1341884461,
+          "fee": 1980,
+          "received": 56841108.53,
+          "collectedAt": "2026-11-24T03:40:12.896077Z"
+        },
+        "1000000": {
+          "rate": 114.1341884461,
+          "fee": 1980,
+          "received": 113908202.75,
+          "collectedAt": "2026-11-24T03:40:12.896077Z"
+        }
+      }
+    },
+    {
+      "alias": "brastel",
+      "name": "Brastel Remit",
+      "affiliateUrl": "https://www.brastelremit.jp/",
+      "auto": false,
+      "quotes": {}
+    },
+    {
+      "alias": "smile",
+      "name": "Smile Remit",
+      "affiliateUrl": "https://www.smileremit.jp/",
+      "auto": false,
+      "quotes": {}
+    },
+    {
+      "alias": "remitly",
+      "name": "Remitly",
+      "affiliateUrl": "https://www.remitly.com/",
+      "auto": false,
+      "quotes": {}
+    }
+  ]
+}
