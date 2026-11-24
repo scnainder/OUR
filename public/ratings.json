@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-24T06:16:00.702Z",
+  "updatedAt": "2026-11-24T07:38:40.905Z",
   "ratings": {
     "wise": {
       "ios": {
         "score": 4.68,
-        "count": 28345,
+        "count": 28353,
         "url": "https://apps.apple.com/jp/app/wise/id612261027?uo=4"
       },
       "play": {
         "score": 4.66,
-        "count": 2142246,
+        "count": 2142351,
         "url": "https://play.google.com/store/apps/details?id=com.transferwise.android"
       }
     },
@@ -21,7 +21,7 @@
       },
       "play": {
         "score": 4.41,
-        "count": 1729600,
+        "count": 1729678,
         "url": "https://play.google.com/store/apps/details?id=com.remitly.androidapp"
       }
     },
@@ -33,7 +33,7 @@
       },
       "play": {
         "score": 4.56,
-        "count": 11123,
+        "count": 11125,
         "url": "https://play.google.com/store/apps/details?id=com.instarem.mobileapp"
       }
     },
@@ -81,7 +81,7 @@
       },
       "play": {
         "score": 4.73,
-        "count": 10128,
+        "count": 10129,
         "url": "https://play.google.com/store/apps/details?id=com.digitalwalletcorp.app.smiles"
       }
     },
@@ -112,7 +112,7 @@
       },
       "play": {
         "score": 4.07,
-        "count": 194941,
+        "count": 194947,
         "url": "https://play.google.com/store/apps/details?id=com.paysend.app"
       }
     },
@@ -126,6 +126,18 @@
         "score": 4.63,
         "count": 6787,
         "url": "https://play.google.com/store/apps/details?id=net.payforex.mobile"
+      }
+    },
+    "city-express": {
+      "ios": {
+        "score": 4.16,
+        "count": 201,
+        "url": "https://apps.apple.com/jp/app/city-express-japan/id1512891887?uo=4"
+      },
+      "play": {
+        "score": 4.42,
+        "count": 279,
+        "url": "https://play.google.com/store/apps/details?id=jp.co.Ctxpress.Eapplication.p00011a"
       }
     }
   }

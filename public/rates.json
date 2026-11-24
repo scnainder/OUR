@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T06:17:18.295Z",
+  "updatedAt": "2026-11-24T07:38:34.808Z",
   "chips": [
     50000,
     100000,
@@ -17,53 +17,53 @@
       "affiliateUrl": "https://wise.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-24T06:17:18.295Z",
+      "asOf": "2026-11-24T07:38:34.806Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 289
           },
           {
             "amount": 30000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 442
           },
           {
             "amount": 50000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 595
           },
           {
             "amount": 100000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 976
           },
           {
             "amount": 200000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 1741
           },
           {
             "amount": 300000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 2505
           },
           {
             "amount": 500000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 4034
           },
           {
             "amount": 1000000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 7853
           },
           {
             "amount": 2000000,
-            "rate": 114.487,
+            "rate": 114.403,
             "fee": 15494
           }
         ]
@@ -78,13 +78,13 @@
       "asOf": "2026-11-24T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 113.95,
+        "rate": 113.89,
         "fee": 100,
         "feePct": 0,
         "feeKnown": true,
         "tiers": null,
         "max": null,
-        "note": "Promo pelanggan baru: ¥1 = Rp 114.66, bebas biaya (untuk ¥100.000 pertama)"
+        "note": "Promo pelanggan baru: ¥1 = Rp 114.59, bebas biaya (untuk ¥100.000 pertama)"
       }
     },
     {
@@ -93,53 +93,53 @@
       "affiliateUrl": "https://www.instarem.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-24T06:17:18.295Z",
+      "asOf": "2026-11-24T07:38:34.807Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 30000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 50000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 100000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 200000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 300000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 500000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 1000000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           },
           {
             "amount": 2000000,
-            "rate": 113.9458134481,
+            "rate": 113.7867234954,
             "fee": 0
           }
         ]
@@ -151,48 +151,48 @@
       "affiliateUrl": "https://www.sbiremit.co.jp/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-24T06:17:18.295Z",
+      "asOf": "2026-11-24T07:38:34.807Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 460
           },
           {
             "amount": 30000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 880
           },
           {
             "amount": 50000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 880
           },
           {
             "amount": 100000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 1480
           },
           {
             "amount": 200000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 1480
           },
           {
             "amount": 300000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 1980
           },
           {
             "amount": 500000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 1980
           },
           {
             "amount": 1000000,
-            "rate": 114.1601142103,
+            "rate": 114.1321941565,
             "fee": 1980
           }
         ]
@@ -216,7 +216,7 @@
       "asOf": "2026-11-24T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 114.3,
+        "rate": 114.4,
         "fee": 0,
         "feePct": 0,
         "feeKnown": true,
@@ -320,6 +320,41 @@
       "source": "none",
       "asOf": null,
       "model": null
+    },
+    {
+      "alias": "city-express",
+      "name": "City Express",
+      "affiliateUrl": "https://cityremit.com/en/",
+      "info": null,
+      "source": "manual",
+      "asOf": "2026-11-24T00:00:00.000Z",
+      "model": {
+        "type": "flat",
+        "rate": 113.85,
+        "fee": 0,
+        "feePct": 0,
+        "feeKnown": true,
+        "tiers": [
+          [
+            10000,
+            400
+          ],
+          [
+            50000,
+            500
+          ],
+          [
+            250000,
+            1000
+          ],
+          [
+            1000000,
+            1500
+          ]
+        ],
+        "max": 1000000,
+        "note": "Kurs indikatif (halaman City Express: diperbarui Nov 16, 2026, 5:16 PM JST); kurs final tampil di aplikasi"
+      }
     }
   ]
 }

@@ -93,6 +93,14 @@
       "playId": "net.payforex.mobile",
       "rateSource": "manual",
       "info": "Biaya publik mulai ¥480 (rekening bank IDR), gratis untuk ¥600.000 ke atas. Kurs hanya terlihat setelah login."
+    },
+    {
+      "alias": "city-express",
+      "name": "City Express",
+      "affiliateUrl": "https://cityremit.com/en/",
+      "iosId": 1512891887,
+      "playId": "jp.co.Ctxpress.Eapplication.p00011a",
+      "rateSource": "manual"
     }
   ]
 }
