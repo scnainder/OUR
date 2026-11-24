@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from 'react'
 type Quote = { rate: number; fee: number; received: number; feeKnown: boolean }
 type Model =
   | { type: 'points'; points: { amount: number; rate: number; fee: number }[] }
-  | { type: 'flat'; rate: number; fee: number | null; feePct: number; feeKnown: boolean }
+  | { type: 'flat'; rate: number; fee: number | null; feePct: number; feeKnown: boolean; tiers?: [number, number][] | null; max?: number | null }
 type Provider = { alias: string; name: string; affiliateUrl: string | null; source: 'api' | 'scrape' | 'manual' | 'none'; asOf: string | null; model: Model | null }
 type Rates = { updatedAt: string; chips: number[]; minAmount: number; maxAmount: number; midMarket: number | null; providers: Provider[] }
 type Store = { score: number; count: number; url: string }
@@ -25,7 +25,9 @@ function quote(p: Provider, amount: number): Quote | null {
   if (!m) return null
   let rate: number, fee: number, feeKnown = true
   if (m.type === 'flat') {
+    if (m.max && amount > m.max) return null
     rate = m.rate; fee = (m.fee ?? 0) + (m.feePct / 100) * amount; feeKnown = m.feeKnown
+    if (m.tiers) fee = (m.tiers.find(([upTo]) => amount <= upTo) ?? m.tiers[m.tiers.length - 1])[1]
   } else {
     const pts = m.points
     if (!pts.length || amount < pts[0].amount || amount > pts[pts.length - 1].amount) return null

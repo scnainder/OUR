@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T05:16:33.702Z",
+  "updatedAt": "2026-11-24T05:46:07.200Z",
   "chips": [
     50000,
     100000,
@@ -16,53 +16,53 @@
       "name": "Wise",
       "affiliateUrl": "https://wise.com/",
       "source": "api",
-      "asOf": "2026-11-24T05:16:33.323Z",
+      "asOf": "2026-11-24T05:46:06.896Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 289
           },
           {
             "amount": 30000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 442
           },
           {
             "amount": 50000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 595
           },
           {
             "amount": 100000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 976
           },
           {
             "amount": 200000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 1741
           },
           {
             "amount": 300000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 2505
           },
           {
             "amount": 500000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 4034
           },
           {
             "amount": 1000000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 7853
           },
           {
             "amount": 2000000,
-            "rate": 114.57,
+            "rate": 114.484,
             "fee": 15494
           }
         ]
@@ -73,7 +73,7 @@
       "name": "Remitly",
       "affiliateUrl": "https://www.remitly.com/",
       "source": "scrape",
-      "asOf": "2026-11-24T05:16:33.702Z",
+      "asOf": "2026-11-24T05:46:07.197Z",
       "model": {
         "type": "flat",
         "rate": 114.72,
@@ -87,53 +87,53 @@
       "name": "Instarem",
       "affiliateUrl": "https://www.instarem.com/",
       "source": "api",
-      "asOf": "2026-11-24T05:16:33.702Z",
+      "asOf": "2026-11-24T05:46:07.197Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 30000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 50000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 100000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 200000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 300000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 500000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 1000000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           },
           {
             "amount": 2000000,
-            "rate": 114.071217839,
+            "rate": 113.9278985352,
             "fee": 0
           }
         ]
@@ -144,48 +144,48 @@
       "name": "SBI Remit",
       "affiliateUrl": "https://www.sbiremit.co.jp/",
       "source": "api",
-      "asOf": "2026-11-24T05:16:33.702Z",
+      "asOf": "2026-11-24T05:46:07.197Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 460
           },
           {
             "amount": 30000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 880
           },
           {
             "amount": 50000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 880
           },
           {
             "amount": 100000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 1480
           },
           {
             "amount": 200000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 1480
           },
           {
             "amount": 300000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 1980
           },
           {
             "amount": 500000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 1980
           },
           {
             "amount": 1000000,
-            "rate": 114.2857544524,
+            "rate": 114.1421656043,
             "fee": 1980
           }
         ]
@@ -203,9 +203,42 @@
       "alias": "brastel",
       "name": "Brastel Remit",
       "affiliateUrl": "https://www.brastelremit.jp/",
-      "source": "none",
-      "asOf": null,
-      "model": null
+      "source": "manual",
+      "asOf": "2026-11-24T00:00:00.000Z",
+      "model": {
+        "type": "flat",
+        "rate": 114.3,
+        "fee": 0,
+        "feePct": 0,
+        "feeKnown": true,
+        "tiers": [
+          [
+            10000,
+            460
+          ],
+          [
+            30000,
+            780
+          ],
+          [
+            50000,
+            880
+          ],
+          [
+            100000,
+            1280
+          ],
+          [
+            300000,
+            1480
+          ],
+          [
+            800000,
+            1580
+          ]
+        ],
+        "max": 800000
+      }
     },
     {
       "alias": "smiles",
