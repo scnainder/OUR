@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '7 * * * *'    # kurs: tiap jam
     - cron: '23 20 * * *'  # rating: tiap hari (05:23 WIB)
+    - cron: '47 */6 * * *' # pemindai browser: tiap 6 jam
   workflow_dispatch:
 
 permissions:
@@ -17,6 +18,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Pemindai browser (Remitly, Brastel, Smiles)
+        if: github.event.schedule == '47 */6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: |
+          npm install -g playwright
+          npx playwright install --with-deps chromium
+          node scripts/scan-manual.mjs
       - run: node scripts/update-rates.mjs
       - name: Rating toko aplikasi (harian / manual)
         if: github.event.schedule == '23 20 * * *' || github.event_name == 'workflow_dispatch'
@@ -25,5 +33,5 @@ jobs:
         run: |
           git config user.name "kurs-bot"
           git config user.email "kurs-bot@users.noreply.github.com"
-          git add public/rates.json public/ratings.json
+          git add public/rates.json public/ratings.json data/manual-rates.json
           git diff --staged --quiet || (git commit -m "chore: update kurs & rating" && git pull --rebase -q && git push)

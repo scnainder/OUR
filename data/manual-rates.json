@@ -30,6 +30,37 @@
         ]
       ],
       "max": 800000,
+      "note": "Belum termasuk biaya transfer bank di Jepang ke rekening Brastel",
+      "updatedAt": "2026-11-24"
+    },
+    "remitly": {
+      "rate": 113.95,
+      "fee": 100,
+      "note": "Promo pelanggan baru: ¥1 = Rp 114.66, bebas biaya (untuk ¥100.000 pertama)",
+      "updatedAt": "2026-11-24"
+    },
+    "smiles": {
+      "rate": 114.4,
+      "tiers": [
+        [
+          10000,
+          450
+        ],
+        [
+          50000,
+          880
+        ],
+        [
+          250000,
+          1480
+        ],
+        [
+          1000000,
+          1980
+        ]
+      ],
+      "max": 1000000,
+      "note": "Biaya & kurs kirim lewat Smiles (bukan jalur Ria)",
       "updatedAt": "2026-11-24"
     }
   }

@@ -57,11 +57,11 @@ for (const c of cfg) {
   if (!model && m?.rate && sane(m.rate)) {
     const ageDays = (Date.now() - new Date(m.updatedAt).getTime()) / 864e5
     if (ageDays <= MANUAL_MAX_AGE_DAYS) {
-      model = { type: 'flat', rate: m.rate, fee: m.fee ?? 0, feePct: m.feePct ?? 0, feeKnown: m.fee != null || m.feePct != null || !!m.tiers, tiers: m.tiers ?? null, max: m.max ?? null }
+      model = { type: 'flat', rate: m.rate, fee: m.fee ?? 0, feePct: m.feePct ?? 0, feeKnown: m.fee != null || m.feePct != null || !!m.tiers, tiers: m.tiers ?? null, max: m.max ?? null, note: m.note ?? null }
       source = 'manual'; asOf = new Date(m.updatedAt).toISOString()
     }
   }
-  providers.push({ alias: c.alias, name: c.name, affiliateUrl: c.affiliateUrl, source, asOf, model })
+  providers.push({ alias: c.alias, name: c.name, affiliateUrl: c.affiliateUrl, info: c.info ?? null, source, asOf, model })
 }
 
 if (!providers.some((p) => p.source !== 'none')) { console.error('Tidak ada data, tidak menimpa.'); process.exit(1) }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T05:46:07.200Z",
+  "updatedAt": "2026-11-24T06:17:18.295Z",
   "chips": [
     50000,
     100000,
@@ -15,54 +15,55 @@
       "alias": "wise",
       "name": "Wise",
       "affiliateUrl": "https://wise.com/",
+      "info": null,
       "source": "api",
-      "asOf": "2026-11-24T05:46:06.896Z",
+      "asOf": "2026-11-24T06:17:18.295Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 289
           },
           {
             "amount": 30000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 442
           },
           {
             "amount": 50000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 595
           },
           {
             "amount": 100000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 976
           },
           {
             "amount": 200000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 1741
           },
           {
             "amount": 300000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 2505
           },
           {
             "amount": 500000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 4034
           },
           {
             "amount": 1000000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 7853
           },
           {
             "amount": 2000000,
-            "rate": 114.484,
+            "rate": 114.487,
             "fee": 15494
           }
         ]
@@ -72,68 +73,73 @@
       "alias": "remitly",
       "name": "Remitly",
       "affiliateUrl": "https://www.remitly.com/",
-      "source": "scrape",
-      "asOf": "2026-11-24T05:46:07.197Z",
+      "info": null,
+      "source": "manual",
+      "asOf": "2026-11-24T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 114.72,
-        "fee": null,
+        "rate": 113.95,
+        "fee": 100,
         "feePct": 0,
-        "feeKnown": false
+        "feeKnown": true,
+        "tiers": null,
+        "max": null,
+        "note": "Promo pelanggan baru: ¥1 = Rp 114.66, bebas biaya (untuk ¥100.000 pertama)"
       }
     },
     {
       "alias": "instarem",
       "name": "Instarem",
       "affiliateUrl": "https://www.instarem.com/",
+      "info": null,
       "source": "api",
-      "asOf": "2026-11-24T05:46:07.197Z",
+      "asOf": "2026-11-24T06:17:18.295Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 30000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 50000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 100000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 200000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 300000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 500000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 1000000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           },
           {
             "amount": 2000000,
-            "rate": 113.9278985352,
+            "rate": 113.9458134481,
             "fee": 0
           }
         ]
@@ -143,49 +149,50 @@
       "alias": "sbi-remit",
       "name": "SBI Remit",
       "affiliateUrl": "https://www.sbiremit.co.jp/",
+      "info": null,
       "source": "api",
-      "asOf": "2026-11-24T05:46:07.197Z",
+      "asOf": "2026-11-24T06:17:18.295Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 460
           },
           {
             "amount": 30000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 880
           },
           {
             "amount": 50000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 880
           },
           {
             "amount": 100000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 1480
           },
           {
             "amount": 200000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 1480
           },
           {
             "amount": 300000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 1980
           },
           {
             "amount": 500000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 1980
           },
           {
             "amount": 1000000,
-            "rate": 114.1421656043,
+            "rate": 114.1601142103,
             "fee": 1980
           }
         ]
@@ -195,6 +202,7 @@
       "alias": "western-union",
       "name": "Western Union",
       "affiliateUrl": "https://www.westernunion.com/jp/",
+      "info": "Kurs di situsnya baru terlihat pasti untuk transfer pertama (promo). Cek langsung sebelum kirim.",
       "source": "none",
       "asOf": null,
       "model": null
@@ -203,6 +211,7 @@
       "alias": "brastel",
       "name": "Brastel Remit",
       "affiliateUrl": "https://www.brastelremit.jp/",
+      "info": null,
       "source": "manual",
       "asOf": "2026-11-24T00:00:00.000Z",
       "model": {
@@ -237,21 +246,50 @@
             1580
           ]
         ],
-        "max": 800000
+        "max": 800000,
+        "note": "Belum termasuk biaya transfer bank di Jepang ke rekening Brastel"
       }
     },
     {
       "alias": "smiles",
       "name": "Smiles Remittance",
-      "affiliateUrl": "https://www.smilesremit.jp/",
-      "source": "none",
-      "asOf": null,
-      "model": null
+      "affiliateUrl": "https://www.smileswallet.com/japan/",
+      "info": null,
+      "source": "manual",
+      "asOf": "2026-11-24T00:00:00.000Z",
+      "model": {
+        "type": "flat",
+        "rate": 114.4,
+        "fee": 0,
+        "feePct": 0,
+        "feeKnown": true,
+        "tiers": [
+          [
+            10000,
+            450
+          ],
+          [
+            50000,
+            880
+          ],
+          [
+            250000,
+            1480
+          ],
+          [
+            1000000,
+            1980
+          ]
+        ],
+        "max": 1000000,
+        "note": "Biaya & kurs kirim lewat Smiles (bukan jalur Ria)"
+      }
     },
     {
       "alias": "gme",
       "name": "GME Remit",
       "affiliateUrl": "https://www.gmeremit.com/",
+      "info": "Kalkulator situsnya belum mendukung pengiriman dari Jepang. Cek di aplikasi.",
       "source": "none",
       "asOf": null,
       "model": null
@@ -259,7 +297,8 @@
     {
       "alias": "kyodai",
       "name": "Kyodai Remittance",
-      "affiliateUrl": "https://www.kyodai-remittance.com/",
+      "affiliateUrl": "https://kyodairemittance.com/",
+      "info": "Sekarang bagian dari Ria. Kurs hanya tampil di situs/aplikasi resmi (situsnya memblokir pembaca otomatis).",
       "source": "none",
       "asOf": null,
       "model": null
@@ -268,6 +307,16 @@
       "alias": "paysend",
       "name": "Paysend",
       "affiliateUrl": "https://paysend.com/",
+      "info": "Kalkulator situsnya belum menampilkan Jepang → Indonesia. Cek di aplikasi.",
+      "source": "none",
+      "asOf": null,
+      "model": null
+    },
+    {
+      "alias": "payforex",
+      "name": "PayForex",
+      "affiliateUrl": "https://www.payforex.net/",
+      "info": "Biaya publik mulai ¥480 (rekening bank IDR), gratis untuk ¥600.000 ke atas. Kurs hanya terlihat setelah login.",
       "source": "none",
       "asOf": null,
       "model": null
