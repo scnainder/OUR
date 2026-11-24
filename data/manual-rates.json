@@ -1,0 +1,4 @@
+{
+  "_catatan": "Isi kurs provider yang tidak bisa di-scrape. Format: \"alias\": { \"rate\": 114.2, \"fee\": 500, \"updatedAt\": \"2026-11-24\" }. rate = IDR per 1 JPY, fee = biaya tetap dalam JPY. Kosong = tampil 'Cek kurs'. Data lebih dari 3 hari otomatis disembunyikan.",
+  "rates": {}
+}

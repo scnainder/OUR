@@ -23,7 +23,7 @@ export default function KursPage() {
         <p className="text-xs text-gray-500 mt-8 leading-relaxed">
           Keterbukaan: halaman ini berisi link afiliasi. Jika kamu mendaftar lewat link kami, kami bisa mendapat komisi tanpa biaya tambahan
           untukmu. Data kurs diambil dari sumber publik dan bersifat estimasi; kurs final ditentukan provider saat transaksi.
-          Provider bertanda &quot;Cek kurs&quot; tidak menyediakan data otomatis.
+          Rating diambil dari App Store dan Play Store Jepang.
         </p>
       </section>
     </div>

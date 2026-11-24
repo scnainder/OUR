@@ -1,0 +1,120 @@
+{
+  "updatedAt": "2026-11-24T05:07:32.939Z",
+  "ratings": {
+    "wise": {
+      "ios": {
+        "score": 4.68,
+        "count": 28353,
+        "url": "https://apps.apple.com/jp/app/wise/id612261027?uo=4"
+      },
+      "play": {
+        "score": 4.66,
+        "count": 2142204,
+        "url": "https://play.google.com/store/apps/details?id=com.transferwise.android"
+      }
+    },
+    "remitly": {
+      "ios": {
+        "score": 4.73,
+        "count": 864,
+        "url": "https://apps.apple.com/jp/app/remitly-%E6%97%A5%E6%9C%AC%E3%81%8B%E3%82%89%E3%81%AE%E9%80%81%E9%87%91/id674258465?uo=4"
+      },
+      "play": {
+        "score": 4.41,
+        "count": 1729558,
+        "url": "https://play.google.com/store/apps/details?id=com.remitly.androidapp"
+      }
+    },
+    "instarem": {
+      "ios": {
+        "score": 4.61,
+        "count": 124,
+        "url": "https://apps.apple.com/jp/app/instarem-send-money-abroad/id1190075959?uo=4"
+      },
+      "play": {
+        "score": 4.56,
+        "count": 11123,
+        "url": "https://play.google.com/store/apps/details?id=com.instarem.mobileapp"
+      }
+    },
+    "sbi-remit": {
+      "ios": {
+        "score": 2.54,
+        "count": 61,
+        "url": "https://apps.apple.com/jp/app/sbi-remit/id6755135538?uo=4"
+      },
+      "play": {
+        "score": 2.83,
+        "count": 237,
+        "url": "https://play.google.com/store/apps/details?id=jp.co.remit.sbiremit.renewal"
+      }
+    },
+    "western-union": {
+      "ios": {
+        "score": 4.28,
+        "count": 4532,
+        "url": "https://apps.apple.com/jp/app/western-union-%E3%81%AE%E9%80%81%E9%87%91-%E6%97%A5%E6%9C%AC/id1437019338?uo=4"
+      },
+      "play": {
+        "score": 4.38,
+        "count": 1293,
+        "url": "https://play.google.com/store/apps/details?id=com.westernunion.moneytransferr3app.jp"
+      }
+    },
+    "brastel": {
+      "ios": {
+        "score": 3.83,
+        "count": 267,
+        "url": "https://apps.apple.com/jp/app/%E3%83%96%E3%83%A9%E3%82%B9%E3%83%86%E3%83%AB%E3%83%AC%E3%83%9F%E3%83%83%E3%83%88-%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91/id1294541529?uo=4"
+      },
+      "play": {
+        "score": 3.7,
+        "count": 1326,
+        "url": "https://play.google.com/store/apps/details?id=com.brastelremit"
+      }
+    },
+    "smiles": {
+      "ios": {
+        "score": 4.69,
+        "count": 44237,
+        "url": "https://apps.apple.com/jp/app/smiles-mobile-remittance/id1238568245?uo=4"
+      },
+      "play": {
+        "score": 4.73,
+        "count": 10124,
+        "url": "https://play.google.com/store/apps/details?id=com.digitalwalletcorp.app.smiles"
+      }
+    },
+    "gme": {
+      "ios": {
+        "score": 4.57,
+        "count": 65,
+        "url": "https://apps.apple.com/jp/app/gme-remit-money-transfer/id1439161261?uo=4"
+      }
+    },
+    "kyodai": {
+      "ios": {
+        "score": 3.29,
+        "count": 199,
+        "url": "https://apps.apple.com/jp/app/kyodai-remittance-%E6%9C%80%E7%9F%AD-%E5%8D%B3%E6%97%A5%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91/id1485912163?uo=4"
+      },
+      "play": {
+        "score": 3.44,
+        "count": 838,
+        "url": "https://play.google.com/store/apps/details?id=jp.co.kyodai.KyodaiApp"
+      }
+    },
+    "paysend": {
+      "ios": {
+        "score": 4.63,
+        "count": 24,
+        "url": "https://apps.apple.com/jp/app/paysend/id1140130413?uo=4"
+      },
+      "play": {
+        "score": 4.07,
+        "count": 194933,
+        "url": "https://play.google.com/store/apps/details?id=com.paysend.app"
+      }
+    }
+  }
+}
