@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T03:35:15.535Z",
+  "updatedAt": "2026-11-26T02:53:50.450Z",
   "ratings": {
     "wise": {
       "ios": {
@@ -9,7 +9,7 @@
       },
       "play": {
         "score": 4.66,
-        "count": 2143802,
+        "count": 2145423,
         "url": "https://play.google.com/store/apps/details?id=com.transferwise.android"
       }
     },
@@ -21,7 +21,7 @@
       },
       "play": {
         "score": 4.41,
-        "count": 1730509,
+        "count": 1731428,
         "url": "https://play.google.com/store/apps/details?id=com.remitly.androidapp"
       }
     },
@@ -33,7 +33,7 @@
       },
       "play": {
         "score": 4.56,
-        "count": 11125,
+        "count": 11127,
         "url": "https://play.google.com/store/apps/details?id=com.instarem.mobileapp"
       }
     },
@@ -44,8 +44,8 @@
         "url": "https://apps.apple.com/jp/app/sbi-remit/id6755135538?uo=4"
       },
       "play": {
-        "score": 2.83,
-        "count": 238,
+        "score": 2.91,
+        "count": 239,
         "url": "https://play.google.com/store/apps/details?id=jp.co.remit.sbiremit.renewal"
       }
     },
@@ -56,8 +56,8 @@
         "url": "https://apps.apple.com/jp/app/western-union-%E3%81%AE%E9%80%81%E9%87%91-%E6%97%A5%E6%9C%AC/id1437019338?uo=4"
       },
       "play": {
-        "score": 4.38,
-        "count": 1292,
+        "score": 4.37,
+        "count": 1294,
         "url": "https://play.google.com/store/apps/details?id=com.westernunion.moneytransferr3app.jp"
       }
     },
@@ -68,8 +68,8 @@
         "url": "https://apps.apple.com/jp/app/%E3%83%96%E3%83%A9%E3%82%B9%E3%83%86%E3%83%AB%E3%83%AC%E3%83%9F%E3%83%83%E3%83%88-%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91/id1294541529?uo=4"
       },
       "play": {
-        "score": 3.7,
-        "count": 1327,
+        "score": 3.74,
+        "count": 1326,
         "url": "https://play.google.com/store/apps/details?id=com.brastelremit"
       }
     },
@@ -81,7 +81,7 @@
       },
       "play": {
         "score": 4.73,
-        "count": 10141,
+        "count": 10148,
         "url": "https://play.google.com/store/apps/details?id=com.digitalwalletcorp.app.smiles"
       }
     },
@@ -112,7 +112,7 @@
       },
       "play": {
         "score": 4.08,
-        "count": 195027,
+        "count": 195159,
         "url": "https://play.google.com/store/apps/details?id=com.paysend.app"
       }
     },
@@ -123,8 +123,8 @@
         "url": "https://apps.apple.com/jp/app/%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91-payforex/id1576337948?uo=4"
       },
       "play": {
-        "score": 4.63,
-        "count": 6788,
+        "score": 4.64,
+        "count": 6793,
         "url": "https://play.google.com/store/apps/details?id=net.payforex.mobile"
       }
     }
