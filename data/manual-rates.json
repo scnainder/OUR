@@ -2,7 +2,7 @@
   "_catatan": "Isi kurs provider yang tidak bisa di-scrape. Format: \"alias\": { \"rate\": 114.2, \"fee\": 500, \"feePct\": 0, \"updatedAt\": \"2026-11-24\" }. rate = IDR per 1 JPY, fee = biaya tetap (JPY), feePct = biaya persen (opsional). Rumus: diterima = (nominal - biaya) x rate. Kosong = tampil 'Cek kurs'. Data lebih dari 3 hari otomatis disembunyikan. Opsional: tiers = [[batas_atas_JPY, biaya_JPY], ...] untuk biaya bertingkat; max = batas kirim per transaksi (JPY).",
   "rates": {
     "brastel": {
-      "rate": 114.6,
+      "rate": 114.78,
       "tiers": [
         [
           10000,
@@ -31,16 +31,16 @@
       ],
       "max": 800000,
       "note": "Belum termasuk biaya transfer bank di Jepang ke rekening Brastel",
-      "updatedAt": "2026-11-26"
+      "updatedAt": "2026-11-27"
     },
     "remitly": {
-      "rate": 114.7,
+      "rate": 114.73,
       "fee": 100,
-      "note": "Promo pelanggan baru: ¥1 = Rp 115.40, bebas biaya (untuk ¥100.000 pertama)",
-      "updatedAt": "2026-11-26"
+      "note": "Promo pelanggan baru: ¥1 = Rp 115.43, bebas biaya (untuk ¥100.000 pertama)",
+      "updatedAt": "2026-11-27"
     },
     "smiles": {
-      "rate": 114.6,
+      "rate": 115.1,
       "tiers": [
         [
           10000,
@@ -61,7 +61,7 @@
       ],
       "max": 1000000,
       "note": "Biaya & kurs kirim lewat Smiles (bukan jalur Ria)",
-      "updatedAt": "2026-11-26"
+      "updatedAt": "2026-11-27"
     }
   }
 }
