@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T08:06:17.278Z",
+  "updatedAt": "2026-11-27T17:00:46.187Z",
   "chips": [
     50000,
     100000,
@@ -9,7 +9,7 @@
   ],
   "minAmount": 10000,
   "maxAmount": 2000000,
-  "midMarket": 115.49,
+  "midMarket": 115.19,
   "providers": [
     {
       "alias": "wise",
@@ -17,53 +17,53 @@
       "affiliateUrl": "https://wise.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-27T08:06:17.277Z",
+      "asOf": "2026-11-27T17:00:46.187Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 289
           },
           {
             "amount": 30000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 442
           },
           {
             "amount": 50000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 595
           },
           {
             "amount": 100000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 976
           },
           {
             "amount": 200000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 1741
           },
           {
             "amount": 300000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 2505
           },
           {
             "amount": 500000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 4034
           },
           {
             "amount": 1000000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 7853
           },
           {
             "amount": 2000000,
-            "rate": 114.997,
+            "rate": 115.153,
             "fee": 15494
           }
         ]
@@ -75,16 +75,16 @@
       "affiliateUrl": "https://www.remitly.com/",
       "info": null,
       "source": "manual",
-      "asOf": "2026-11-27T00:00:00.000Z",
+      "asOf": "2026-11-28T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 114.74,
+        "rate": 114.33,
         "fee": 100,
         "feePct": 0,
         "feeKnown": true,
         "tiers": null,
         "max": null,
-        "note": "Promo pelanggan baru: ¥1 = Rp 115.44, bebas biaya (untuk ¥100.000 pertama)"
+        "note": "Promo pelanggan baru: ¥1 = Rp 115.02, bebas biaya (untuk ¥100.000 pertama)"
       }
     },
     {
@@ -93,53 +93,53 @@
       "affiliateUrl": "https://www.instarem.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-27T08:06:17.277Z",
+      "asOf": "2026-11-27T17:00:46.187Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 30000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 50000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 100000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 200000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 300000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 500000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 1000000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           },
           {
             "amount": 2000000,
-            "rate": 114.2374026552,
+            "rate": 113.817415759,
             "fee": 0
           }
         ]
@@ -151,48 +151,48 @@
       "affiliateUrl": "https://www.sbiremit.co.jp/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-27T08:06:17.277Z",
+      "asOf": "2026-11-27T17:00:46.187Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 460
           },
           {
             "amount": 30000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 880
           },
           {
             "amount": 50000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 880
           },
           {
             "amount": 100000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 1480
           },
           {
             "amount": 200000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 1480
           },
           {
             "amount": 300000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 1980
           },
           {
             "amount": 500000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 1980
           },
           {
             "amount": 1000000,
-            "rate": 114.675616562,
+            "rate": 114.8582178692,
             "fee": 1980
           }
         ]
@@ -213,10 +213,10 @@
       "affiliateUrl": "https://www.brastelremit.jp/",
       "info": null,
       "source": "manual",
-      "asOf": "2026-11-27T00:00:00.000Z",
+      "asOf": "2026-11-28T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 115,
+        "rate": 114.98,
         "fee": 0,
         "feePct": 0,
         "feeKnown": true,
@@ -256,7 +256,7 @@
       "affiliateUrl": "https://www.smileswallet.com/japan/",
       "info": null,
       "source": "manual",
-      "asOf": "2026-11-27T00:00:00.000Z",
+      "asOf": "2026-11-28T00:00:00.000Z",
       "model": {
         "type": "flat",
         "rate": 115.1,
