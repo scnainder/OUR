@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-11-26T02:53:50.450Z",
+  "updatedAt": "2026-11-27T02:55:53.294Z",
   "ratings": {
     "wise": {
       "ios": {
         "score": 4.68,
-        "count": 28370,
+        "count": 28413,
         "url": "https://apps.apple.com/jp/app/wise/id612261027?uo=4"
       },
       "play": {
         "score": 4.66,
-        "count": 2145423,
+        "count": 2147118,
         "url": "https://play.google.com/store/apps/details?id=com.transferwise.android"
       }
     },
     "remitly": {
       "ios": {
         "score": 4.73,
-        "count": 865,
+        "count": 870,
         "url": "https://apps.apple.com/jp/app/remitly-%E6%97%A5%E6%9C%AC%E3%81%8B%E3%82%89%E3%81%AE%E9%80%81%E9%87%91/id674258465?uo=4"
       },
       "play": {
         "score": 4.41,
-        "count": 1731428,
+        "count": 1732431,
         "url": "https://play.google.com/store/apps/details?id=com.remitly.androidapp"
       }
     },
@@ -33,7 +33,7 @@
       },
       "play": {
         "score": 4.56,
-        "count": 11127,
+        "count": 11125,
         "url": "https://play.google.com/store/apps/details?id=com.instarem.mobileapp"
       }
     },
@@ -52,11 +52,11 @@
     "western-union": {
       "ios": {
         "score": 4.28,
-        "count": 4535,
+        "count": 4540,
         "url": "https://apps.apple.com/jp/app/western-union-%E3%81%AE%E9%80%81%E9%87%91-%E6%97%A5%E6%9C%AC/id1437019338?uo=4"
       },
       "play": {
-        "score": 4.37,
+        "score": 4.38,
         "count": 1294,
         "url": "https://play.google.com/store/apps/details?id=com.westernunion.moneytransferr3app.jp"
       }
@@ -76,12 +76,12 @@
     "smiles": {
       "ios": {
         "score": 4.69,
-        "count": 44258,
+        "count": 44353,
         "url": "https://apps.apple.com/jp/app/smiles-mobile-remittance/id1238568245?uo=4"
       },
       "play": {
         "score": 4.73,
-        "count": 10148,
+        "count": 10166,
         "url": "https://play.google.com/store/apps/details?id=com.digitalwalletcorp.app.smiles"
       }
     },
@@ -108,23 +108,23 @@
       "ios": {
         "score": 4.63,
         "count": 24,
-        "url": "https://apps.apple.com/jp/app/paysend/id1140130413?uo=4"
+        "url": "https://apps.apple.com/jp/app/paysend-%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91/id1140130413?uo=4"
       },
       "play": {
         "score": 4.08,
-        "count": 195159,
+        "count": 195286,
         "url": "https://play.google.com/store/apps/details?id=com.paysend.app"
       }
     },
     "payforex": {
       "ios": {
         "score": 4.71,
-        "count": 13559,
+        "count": 13571,
         "url": "https://apps.apple.com/jp/app/%E6%B5%B7%E5%A4%96%E9%80%81%E9%87%91-payforex/id1576337948?uo=4"
       },
       "play": {
         "score": 4.64,
-        "count": 6793,
+        "count": 6795,
         "url": "https://play.google.com/store/apps/details?id=net.payforex.mobile"
       }
     }
