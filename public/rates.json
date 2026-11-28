@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T10:11:31.875Z",
+  "updatedAt": "2026-11-28T15:52:10.602Z",
   "chips": [
     50000,
     100000,
@@ -17,7 +17,7 @@
       "affiliateUrl": "https://wise.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-28T10:11:31.875Z",
+      "asOf": "2026-11-28T15:52:10.602Z",
       "model": {
         "type": "points",
         "points": [
@@ -93,7 +93,7 @@
       "affiliateUrl": "https://www.instarem.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-28T10:11:31.875Z",
+      "asOf": "2026-11-28T15:52:10.602Z",
       "model": {
         "type": "points",
         "points": [
@@ -151,7 +151,7 @@
       "affiliateUrl": "https://www.sbiremit.co.jp/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-28T10:11:31.875Z",
+      "asOf": "2026-11-28T15:52:10.602Z",
       "model": {
         "type": "points",
         "points": [
