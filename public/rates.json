@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T18:07:57.743Z",
+  "updatedAt": "2026-11-28T01:42:11.500Z",
   "chips": [
     50000,
     100000,
@@ -17,53 +17,53 @@
       "affiliateUrl": "https://wise.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-27T18:07:57.743Z",
+      "asOf": "2026-11-28T01:42:11.499Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 289
           },
           {
             "amount": 30000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 442
           },
           {
             "amount": 50000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 595
           },
           {
             "amount": 100000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 976
           },
           {
             "amount": 200000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 1741
           },
           {
             "amount": 300000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 2505
           },
           {
             "amount": 500000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 4034
           },
           {
             "amount": 1000000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 7853
           },
           {
             "amount": 2000000,
-            "rate": 115.165,
+            "rate": 115.05,
             "fee": 15494
           }
         ]
@@ -78,13 +78,13 @@
       "asOf": "2026-11-28T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 114.33,
+        "rate": 114.34,
         "fee": 100,
         "feePct": 0,
         "feeKnown": true,
         "tiers": null,
         "max": null,
-        "note": "Promo pelanggan baru: ¥1 = Rp 115.02, bebas biaya (untuk ¥100.000 pertama)"
+        "note": "Promo pelanggan baru: ¥1 = Rp 115.03, bebas biaya (untuk ¥100.000 pertama)"
       }
     },
     {
@@ -93,53 +93,53 @@
       "affiliateUrl": "https://www.instarem.com/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-27T18:07:57.743Z",
+      "asOf": "2026-11-28T01:42:11.499Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 30000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 50000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 100000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 200000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 300000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 500000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 1000000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           },
           {
             "amount": 2000000,
-            "rate": 113.8975068959,
+            "rate": 113.9598,
             "fee": 0
           }
         ]
@@ -151,48 +151,48 @@
       "affiliateUrl": "https://www.sbiremit.co.jp/",
       "info": null,
       "source": "api",
-      "asOf": "2026-11-27T18:07:57.743Z",
+      "asOf": "2026-11-28T01:42:11.499Z",
       "model": {
         "type": "points",
         "points": [
           {
             "amount": 10000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 460
           },
           {
             "amount": 30000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 880
           },
           {
             "amount": 50000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 880
           },
           {
             "amount": 100000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 1480
           },
           {
             "amount": 200000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 1480
           },
           {
             "amount": 300000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 1980
           },
           {
             "amount": 500000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 1980
           },
           {
             "amount": 1000000,
-            "rate": 114.9390413987,
+            "rate": 114.7993464095,
             "fee": 1980
           }
         ]
@@ -216,7 +216,7 @@
       "asOf": "2026-11-28T00:00:00.000Z",
       "model": {
         "type": "flat",
-        "rate": 114.98,
+        "rate": 115,
         "fee": 0,
         "feePct": 0,
         "feeKnown": true,
